@@ -141,7 +141,7 @@
     <color name="WindowTitleBackground" color="black" />
   </windowstyle>
   <!-- Main infobar -->
-  <screen name="InfoBar" flags="wfNoBorder" position="0,520" size="1280,720" title="InfoBar" backgroundColor="transparent">
+  <screen name="InfoBar" flags="wfNoBorder" position="center,520" size="1280,720" title="InfoBar" backgroundColor="transparent">
     <ePixmap position="0,0" zPosition="1" size="1280,720" pixmap="Army_MoodBlue_mod/infobar_light-fs8.png" />
     <ePixmap position="202,104" zPosition="2" size="10,16" pixmap="Army_MoodBlue_mod/icons/icon_event.png" alphatest="on" />
     <widget source="session.CurrentService" render="Label" position="371,36" size="530,32" zPosition="2" font="Regular;28" halign="center" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="transpBlack">
@@ -181,17 +181,17 @@
     <widget source="global.CurrentTime" render="Label" position="1113,40" size="100,32" zPosition="2" font="LCD; 26" valign="bottom" halign="right" foregroundColor="white" backgroundColor="un333333" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1213,44" size="70,22" zPosition="2" font="LCD;20" valign="bottom" halign="left" backgroundColor="un333333" transparent="1" foregroundColor="un99ff">
+    <widget source="global.CurrentTime" render="Label" position="1213,44" size="70,22" zPosition="2" font="LCD;20" valign="bottom" halign="left" backgroundColor="un333333" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
     </widget>
     <widget source="global.CurrentTime" render="Label" position="1004,34" size="122,32" zPosition="2" font="Regular;18" halign="right" backgroundColor="transpBlack" foregroundColor="white" transparent="1" valign="bottom">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <!--Turner Status (Nim) A-B-C-D -->
-    <eLabel text="A" position="1160,104" zPosition="1" size="20,22" font="Regular;20" halign="center" foregroundColor="grey" backgroundColor="background" transparent="1" />
-    <eLabel text="B" position="1180,104" zPosition="1" size="20,22" font="Regular;20" halign="center" foregroundColor="grey" backgroundColor="background" transparent="1" />
-    <eLabel text="C" position="1200,104" zPosition="1" size="20,22" font="Regular;20" halign="center" foregroundColor="grey" backgroundColor="background" transparent="1" />
-    <eLabel text="D" position="1220,104" zPosition="1" size="20,22" font="Regular;20" halign="center" foregroundColor="grey" backgroundColor="background" transparent="1" />
+    <eLabel text="A" position="1160,104" zPosition="1" size="20,22" font="Regular;20" halign="center" foregroundColor="un99ff" backgroundColor="background" transparent="1" />
+    <eLabel text="B" position="1180,104" zPosition="1" size="20,22" font="Regular;20" halign="center" foregroundColor="un99ff" backgroundColor="background" transparent="1" />
+    <eLabel text="C" position="1200,104" zPosition="1" size="20,22" font="Regular;20" halign="center" foregroundColor="un99ff" backgroundColor="background" transparent="1" />
+    <eLabel text="D" position="1220,104" zPosition="1" size="20,22" font="Regular;20" halign="center" foregroundColor="un99ff" backgroundColor="background" transparent="1" />
     <widget source="session.TunerInfo" render="FixedLabel" text="A" position="1160,104" zPosition="2" size="20,22" font="Regular;20" halign="center" foregroundColor="unf23d21" backgroundColor="un333333" transparent="1">
       <convert type="TunerInfo">TunerUseMask</convert>
       <convert type="ValueBitTest">1</convert>
@@ -241,7 +241,7 @@
     <widget source="session.CurrentService" render="Label" position="373,518" size="530,32" zPosition="2" font="Regular;28" halign="center" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="background">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="session.CurrentService" zPosition="4" render="Label" position="861,662" size="410,24" backgroundColor="background" foregroundColor="white" transparent="1" font="Display; 16" halign="center">
+    <widget source="session.CurrentService" zPosition="4" render="Label" position="866,667" size="410,24" backgroundColor="background" foregroundColor="white" transparent="1" font="Display; 16" halign="center">
       <convert type="PliExtraInfo">CryptoInfo</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="6,529" size="330,24" font="Display; 16" zPosition="4" transparent="1" backgroundColor="transpBlack">
@@ -640,17 +640,15 @@
     <ePixmap position="58,81" zPosition="2" size="760,550" pixmap="Army_MoodBlue_mod/r760x550.png" alphatest="blend" transparent="1" />
     <ePixmap position="870,400" zPosition="2" size="350,46" pixmap="Army_MoodBlue_mod/logoBH.png" alphatest="blend" transparent="1" />
     <eLabel text="About" position="80,30" size="410,34" font="RegularAA;28" halign="left" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
-    <eLabel text="Black Hole" position="78,110" size="600,32" font="Regular;26" halign="left" backgroundColor="transpBlack" transparent="1" />
     <widget source="EnigmaVersion" render="Label" position="78,150" size="580,28" font="Regular;24" halign="left" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
     <widget source="ImageVersion" render="Label" position="78,180" size="580,28" font="Regular;24" halign="left" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
-    <widget source="FPVersion" render="Label" position="78,220" size="580,28" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
     <widget source="TunerHeader" render="Label" position="78,250" size="580,28" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
     <widget source="Tuner0" render="Label" position="78,280" size="580,28" font="Regular;24" halign="left" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
     <widget source="Tuner1" render="Label" position="78,310" size="580,28" font="Regular;24" halign="left" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
     <widget source="Tuner2" render="Label" position="78,340" size="580,28" font="Regular;24" halign="left" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
     <widget source="Tuner3" render="Label" position="78,370" size="580,28" font="Regular;24" halign="left" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
     <widget source="HDDHeader" render="Label" position="78,430" size="580,28" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
-    <widget source="hddA" render="Label" position="78,460" size="650,28" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
+    <widget source="hddA" render="Label" position="78,460" size="650,28" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" foregroundColor="un99ff" />
   </screen>
   <!-- Adapter Setup  -->
   <screen name="AdapterSetup" position="center,center" size="1160,560" title="Network Setup">
@@ -881,7 +879,7 @@
     <ePixmap position="864,425" zPosition="2" size="250,4" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
     <ePixmap position="717,78" zPosition="-1" size="533,300" pixmap="Army_MoodBlue_mod/tv2_1-fs8.png" alphatest="on" />
     <ePixmap position="20,20" zPosition="1" size="60,49" pixmap="Army_MoodBlue_mod/menu/logo_hd.png" alphatest="blend" transparent="1" />
-    <eLabel text="Channel Selection TV" position="210,35" zPosition="2" size="400,32" font="RegularAA;28" halign="left" transparent="1" foregroundColor="un99ff" backgroundColor="transpBlack" />
+    <eLabel text="Channel Selection TV" position="211,23" zPosition="2" size="400,34" font="RegularAA;28" halign="left" transparent="1" foregroundColor="un99ff" backgroundColor="transpBlack" />
     <widget source="session.VideoPicture" render="Pig" position="721,82" size="524,291" zPosition="1" backgroundColor="transparent2" />
     <widget name="list" position="20,80" size="680,565" scrollbarMode="showOnDemand" foregroundColorServiceNotAvail="#666666" serviceItemHeight="32" serviceNumberFont="Regular;25" serviceNameFont="Regular;25" serviceInfoFont="Regular;25" colorServiceDescription="yellow" picServiceEventProgressbar="Army_MoodBlue_mod/pl.png" selectionPixmap="Army_MoodBlue_mod/icons/listselection700x32-fs8.png" transparent="1" itemHeight="20" />
     <ePixmap position="51,660" size="250,40" pixmap="Army_MoodBlue_mod/buttons/red25.png" alphatest="on" zPosition="2" />
@@ -910,15 +908,15 @@
     <widget source="ServiceEvent" render="Label" position="716,442" zPosition="1" size="545,200" font="Regular; 20" foregroundColor="white" transparent="1">
   <convert type="EventName">FullDescription</convert>
 </widget>
-    <widget source="ServiceEvent" render="NextEpgInfo" position="721,21" size="425,51" foregroundColor="yellow" transparent="1" noWrap="1" font="Regular; 20">
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="567,35" size="140,34" zPosition="1" font="LCD;32" valign="top" halign="left" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
+    <widget source="ServiceEvent" render="NextEpgInfo" position="721,46" size="470,35" halign="left" valign="bottom" foregroundColor="yellow" transparent="1" noWrap="1" font="Regular; 25">
+</widget>
+    <widget source="global.CurrentTime" render="Label" position="71,23" size="140,34" zPosition="1" font="LCD;32" valign="center" halign="left" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="632,35" size="70,22" zPosition="1" font="LCD;20" valign="top" halign="left" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="139,23" size="70,22" zPosition="1" font="LCD;20" valign="top" halign="left" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
     </widget>
-    <widget source="ServiceEvent" render="Label" position="1145,378" size="100,26" foregroundColor="yellow" backgroundColor="black" transparent="1" zPosition="3" font="Regular; 21" halign="right">
+    <widget source="ServiceEvent" render="Label" position="1145,378" size="100,26" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" zPosition="3" font="Regular; 21" halign="right">
       <convert type="ServiceOrbitalPosition" />
     </widget>
   </screen>
@@ -1048,7 +1046,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
     <ePixmap position="832,81" zPosition="-1" size="378,216" pixmap="Army_MoodBlue_mod/tv_2-fs8.png" alphatest="on" />
     <eLabel text="EPG Selection" position="80,35" zPosition="2" size="400,34" font="RegularAA;28" halign="left" transparent="1" foregroundColor="un99ff" backgroundColor="transpBlack" />
-    <widget source="session.VideoPicture" render="Pig" position=" 836,84" size="370,208" zPosition="3" backgroundColor="transparent2" />
+    <widget source="session.VideoPicture" render="Pig" position="810,80" size="450,208" zPosition="3" backgroundColor="transparent2" />
     <widget name="list" position="80,120" size="710,375" enableWrapAround="1" scrollbarMode="showOnDemand" transparent="1" />
     <ePixmap position="56,650" size="250,40" pixmap="Army_MoodBlue_mod/buttons/red25.png" alphatest="on" zPosition="1" />
     <ePixmap position="362,650" size="250,40" pixmap="Army_MoodBlue_mod/buttons/green25.png" alphatest="on" zPosition="1" />
@@ -1058,10 +1056,10 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     <widget name="key_green" position="362,650" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
     <widget name="key_yellow" position="668,650" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="una18120" transparent="1" />
     <widget name="key_blue" position="974,650" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-    <widget source="Event" render="Label" position="830,340" size="400,274" font="Regular;20" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
+    <widget source="Event" render="Label" position="812,323" size="450,305" font="Regular;20" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <widget source="session.Event_Now" render="Progress" pixmap="Army_MoodBlue_mod/chan_p_bar.png" size="300,14" position="870,310" zPosition="1" backgroundColor="darkgrey" transparent="1">
+    <widget source="session.Event_Now" render="Progress" pixmap="Army_MoodBlue_mod/chan_p_bar.png" size="300,14" position="891,295" zPosition="1" backgroundColor="darkgrey" transparent="1">
       <convert type="EventTime">Progress</convert>
     </widget>
   </screen>
@@ -1075,15 +1073,15 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     <widget name="now_button_sel" pixmap="Army_MoodBlue_mod/epg_now.png" position="265,97" zPosition="3" size="750,40" alphatest="on" />
     <widget name="next_button_sel" pixmap="Army_MoodBlue_mod/epg_next.png" position="265,97" zPosition="3" size="750,40" alphatest="on" />
     <widget name="more_button_sel" pixmap="Army_MoodBlue_mod/epg_more.png" position="265,97" zPosition="3" size="750,40" alphatest="on" />
-    <widget name="now_text" position="268,104" zPosition="4" size="250,25" text="NOW" font="Regular;20" halign="center" foregroundColor="white" backgroundColor="grey" transparent="1" />
+    <widget name="now_text" position="268,104" zPosition="4" size="250,25" text="NOW" font="RegularAA; 20" halign="center" foregroundColor="white" backgroundColor="grey" transparent="1" />
     <widget name="next_text" position="520,104" zPosition="4" size="250,25" text="NEXT" font="Regular;20" halign="center" foregroundColor="white" backgroundColor="grey" transparent="1" />
     <widget name="more_text" position="772,104" zPosition="4" size="250,25" text="MORE" font="Regular;20" halign="center" foregroundColor="white" backgroundColor="grey" transparent="1" />
-    <widget name="date" position="20,100" size="200,28" font="Regular;24" valign="left" halign="right" backgroundColor="transpBlack" transparent="1" />
-    <ePixmap pixmap="Army_MoodBlue_mod/icons/clock.png" position="1060,110" size="14,14" zPosition="1" alphatest="blend" />
-    <widget source="global.CurrentTime" render="Label" position="1100,100" size="140,34" zPosition="1" font="LCD;32" valign="top" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1">
+    <widget name="date" position="20,104" size="240,25" font="Regular;24" valign="center" halign="left" backgroundColor="transpBlack" transparent="1" />
+    <ePixmap pixmap="Army_MoodBlue_mod/icons/clock.png" position="1083,110" size="14,14" zPosition="1" alphatest="blend" />
+    <widget source="global.CurrentTime" render="Label" position="1103,100" size="140,34" zPosition="1" font="LCD;32" valign="top" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1161,94" size="70,22" zPosition="1" font="LCD;20" valign="top" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="1170,100" size="70,22" zPosition="1" font="LCD;20" valign="top" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
     </widget>
     <widget name="list" position="100,175" size="1094,428" scrollbarMode="showOnDemand" transparent="1" />
@@ -1145,31 +1143,31 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     <widget name="timeline4" position="70,155" zPosition="1" size="1,442" pixmap="Army_MoodBlue_mod/timeline.png" />
     <widget name="timeline5" position="70,155" zPosition="1" size="1,442" pixmap="Army_MoodBlue_mod/timeline.png" />
     <widget name="timeline_now" position="70,153" zPosition="2" size="19,446" pixmap="Army_MoodBlue_mod/timeline-now.png" alphatest="on" />
-    <widget source="Event" render="Label" position="885,110" zPosition="1" size="350,80" font="Regular;24" halign="center" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
+    <widget source="Event" render="Label" position="885,110" zPosition="1" size="350,80" font="Regular; 26" halign="center" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="Label" position="900,185" zPosition="1" size="300,48" font="Regular;22" halign="center" backgroundColor="transpBlack" transparent="1">
+    <widget source="Event" render="Label" position="910,185" zPosition="1" size="300,48" font="Regular;22" halign="center" backgroundColor="transpBlack" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">Format:(%A)</convert>
     </widget>
-    <widget source="Event" render="Label" position="986,230" zPosition="1" size="60,22" font="Regular;20" halign="right" backgroundColor="transpBlack" transparent="1">
+    <widget source="Event" render="Label" position="986,230" zPosition="1" size="80,22" font="Regular;20" halign="center" backgroundColor="transpBlack" transparent="1">
       <convert type="EventTime">StartTime</convert>
       <convert type="ClockToText">
       </convert>
     </widget>
-    <widget source="Event" render="Label" position="1051,230" zPosition="1" size="70,22" font="Regular;20" halign="left" backgroundColor="transpBlack" transparent="1">&gt;
+    <widget source="Event" render="Label" position="1051,230" zPosition="1" size="80,22" font="Regular;20" halign="center" backgroundColor="transpBlack" transparent="1">&gt;
 		<convert type="EventTime">EndTime</convert><convert type="ClockToText">Format:-%H:%M</convert></widget>
     <widget source="Event" render="Progress" position="914,270" zPosition="2" pixmap="Army_MoodBlue_mod/chan_p_bar.png" size="300,14" transparent="1">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="Event" render="Label" position="920,300" zPosition="1" size="280,292" font="Regular;18" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
+    <widget source="Event" render="Label" position="870,296" zPosition="1" size="400,330" font="Regular;18" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
-    <ePixmap pixmap="Army_MoodBlue_mod/icons/clock.png" position="990,640" size="14,14" zPosition="1" alphatest="blend" />
-    <widget source="global.CurrentTime" render="Label" position="1030,630" size="140,34" zPosition="1" font="LCD;32" valign="top" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1">
+    <ePixmap pixmap="Army_MoodBlue_mod/icons/clock.png" position="706,39" size="14,14" zPosition="1" alphatest="blend" />
+    <widget source="global.CurrentTime" render="Label" position="722,30" size="140,34" zPosition="1" font="LCD;32" valign="center" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1100,633" size="70,22" zPosition="1" font="LCD;20" valign="top" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="793,30" size="70,22" zPosition="1" font="LCD;20" valign="top" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
     </widget>
     <ePixmap position="130,640" size="250,40" pixmap="Army_MoodBlue_mod/buttons/red25.png" alphatest="on" zPosition="1" />
@@ -1263,7 +1261,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="global.CurrentTime" render="Label" position="1120,76" size="70,22" zPosition="2" font="LCD;20" valign="top" halign="right" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="78,78" size="140,24" font="Regular;22" halign="left" foregroundColor="white" backgroundColor="transpBlack" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="78,78" size="140,24" font="Regular;22" halign="center" foregroundColor="white" backgroundColor="transpBlack" transparent="1">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="375,69" size="530,30" zPosition="2" font="Regular;26" halign="center" noWrap="1" foregroundColor="white" transparent="1" backgroundColor="background">
@@ -1341,13 +1339,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="waitingtext" position="80,400" size="760,30" zPosition="4" font="Regular;22" halign="center" valign="center" transparent="1" />
     <widget name="list" position="80,110" size="760,375" scrollbarMode="showOnDemand" transparent="1" />
     <widget name="freeDiskSpace" position="80,590" zPosition="4" size="760,25" font="Regular;22" halign="left" transparent="1" />
-    <ePixmap pixmap="Army_MoodBlue_mod/icons/clock.png" position="80,548" size="14,14" zPosition="1" alphatest="blend" />
-    <widget source="global.CurrentTime" render="Label" position="120,538" size="140,34" zPosition="1" font="LCD;32" valign="top" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1">
-      <convert type="ClockToText">Default</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="190,541" size="70,22" zPosition="1" font="LCD;20" valign="top" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1">
-      <convert type="ClockToText">Format::%S</convert>
-    </widget>
     <widget source="Service" render="Label" position="880,304" zPosition="4" size="350,50" font="Regular;22" halign="center" foregroundColor="white" backgroundColor="transpBlack" transparent="1">
       <convert type="MovieInfo">RecordServiceName</convert>
     </widget>
@@ -1358,7 +1349,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="ServiceTime">Duration</convert>
       <convert type="ClockToText">AsLength</convert>
     </widget>
-    <widget source="Service" render="Label" position="900,400" zPosition="4" size="350,210" font="Regular;20" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
+    <widget source="Service" render="Label" position="856,401" zPosition="4" size="400,210" font="Regular;20" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
       <convert type="EventName">ExtendedDescription</convert>
     </widget>
     <widget source="session.Event_Now" render="Progress" pixmap="Army_MoodBlue_mod/chan_p_bar.png" size="300,14" position="902,290" zPosition="1" backgroundColor="darkgrey" transparent="1">
