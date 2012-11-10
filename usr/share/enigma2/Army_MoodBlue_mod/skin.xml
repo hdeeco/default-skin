@@ -143,106 +143,106 @@
   </windowstyle>
   <!-- Main infobar -->
   <screen name="InfoBar" flags="wfNoBorder" position="center,520" size="1280,720" title="InfoBar" backgroundColor="transparent">
-  <ePixmap position="center,center" zPosition="1" size="1280,720" pixmap="Army_MoodBlue_mod/infobar_light-fs8.png" />
-  <ePixmap position="202,104" zPosition="2" size="10,16" pixmap="Army_MoodBlue_mod/icons/icon_event.png" alphatest="on" />
-  <widget source="session.CurrentService" render="Label" position="371,36" size="530,32" zPosition="2" font="Regular;28" halign="center" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="transpBlack">
-    <convert type="ServiceName">Name</convert>
-  </widget>
-  <widget source="session.CurrentService" render="Picon" position="35,90" size="130,80" zPosition="10" transparent="1" alphatest="on">
-    <convert type="ServiceName">Reference</convert>
-  </widget>
-  <widget source="session.Event_Now" render="Label" position="218,95" size="90,36" zPosition="2" halign="left" font="Regular; 28" foregroundColor="white" backgroundColor="background" transparent="1">
-    <convert type="EventTime">StartTime</convert>
-    <convert type="ClockToText">Default</convert>
-  </widget>
-  <widget source="session.Event_Now" render="Label" position="312,95" size="660,36" zPosition="2" halign="left" font="Regular; 28" foregroundColor="white" backgroundColor="background" transparent="1" noWrap="1">
-    <convert type="EventName">Name</convert>
-  </widget>
-  <widget source="session.Event_Now" render="Label" position="992,95" size="135,37" zPosition="2" halign="right" font="Regular; 28" foregroundColor="white" backgroundColor="background" transparent="1">
-    <convert type="EventTime">Remaining</convert>
-    <convert type="RemainingToText">InMinutes</convert>
-  </widget>
-  <widget source="session.Event_Now" render="Progress" pixmap="Army_MoodBlue_mod/p_bar.png" position="322,81" size="632,6" zPosition="7" transparent="1">
-    <convert type="EventTime">Progress</convert>
-  </widget>
-  <widget source="session.Event_Next" render="Label" position="218,133" size="90,36" zPosition="2" halign="left" font="Regular; 28" foregroundColor="grey" backgroundColor="background" transparent="1">
-    <convert type="EventTime">StartTime</convert>
-    <convert type="ClockToText">Default</convert>
-  </widget>
-  <widget source="session.Event_Next" render="Label" position="312,133" size="660,36" zPosition="21" halign="left" font="Regular; 28" foregroundColor="grey" backgroundColor="background" transparent="1" noWrap="1">
-    <convert type="EventName">Name</convert>
-  </widget>
-  <widget source="session.Event_Next" render="Label" position="992,133" size="135,37" zPosition="2" halign="right" font="Regular; 28" foregroundColor="grey" backgroundColor="background" transparent="1">
-    <convert type="EventTime">Duration</convert>
-    <convert type="ClockToText">InMinutes</convert>
-  </widget>
-  <widget source="session.RecordState" render="Pixmap" pixmap="Army_MoodBlue_mod/rec.png" position="1243,49" zPosition="3" size="12,12" alphatest="on">
-    <convert type="ConditionalShowHide">Blink</convert>
-  </widget>
-  <widget source="global.CurrentTime" render="Label" position="1113,40" size="100,32" zPosition="2" font="LCD; 26" valign="bottom" halign="right" foregroundColor="white" backgroundColor="un333333" transparent="1">
-    <convert type="ClockToText">Default</convert>
-  </widget>
-  <widget source="global.CurrentTime" render="Label" position="1213,44" size="70,22" zPosition="2" font="LCD;20" valign="bottom" halign="left" backgroundColor="un333333" transparent="1">
-    <convert type="ClockToText">Format::%S</convert>
-  </widget>
-  <widget source="global.CurrentTime" render="Label" position="1004,34" size="122,32" zPosition="2" font="Regular;18" halign="right" backgroundColor="transpBlack" foregroundColor="white" transparent="1" valign="bottom">
-    <convert type="ClockToText">Format:%d.%m.%Y</convert>
-  </widget>
-<widget source="ServiceEvent" render="Label" position="1151,146" size="100,26" foregroundColor="grey" backgroundColor="background" transparent="1" zPosition="3" font="Regular; 21" halign="center">
-  <convert type="ServiceOrbitalPosition" />
-</widget>
-  <!--Turner Status (Nim) A-B-C-D -->
-  <eLabel text="A" position="1160,97" zPosition="1" size="20,22" font="Regular;20" halign="center" foregroundColor="un99ff" backgroundColor="background" transparent="1" />
-  <eLabel text="B" position="1180,97" zPosition="1" size="20,22" font="Regular;20" halign="center" foregroundColor="un99ff" backgroundColor="background" transparent="1" />
-  <eLabel text="C" position="1200,97" zPosition="1" size="20,22" font="Regular;20" halign="center" foregroundColor="un99ff" backgroundColor="background" transparent="1" />
-  <eLabel text="D" position="1220,97" zPosition="1" size="20,22" font="Regular;20" halign="center" foregroundColor="un99ff" backgroundColor="background" transparent="1" />
-  <widget source="session.TunerInfo" render="FixedLabel" text="A" position="1160,97" zPosition="2" size="20,22" font="Regular;20" halign="center" foregroundColor="unf23d21" backgroundColor="un333333" transparent="1">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">1</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="FixedLabel" text="B" position="1180,97" zPosition="2" size="20,22" font="Regular;20" halign="center" foregroundColor="unf23d21" backgroundColor="un333333" transparent="1">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">2</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="FixedLabel" text="C" position="1200,97" zPosition="2" size="20,22" font="Regular;20" halign="center" foregroundColor="unf23d21" backgroundColor="un333333" transparent="1">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">4</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.TunerInfo" render="FixedLabel" text="D" position="1220,97" zPosition="2" size="20,22" font="Regular;20" halign="center" foregroundColor="unf23d21" backgroundColor="un333333" transparent="1">
-    <convert type="TunerInfo">TunerUseMask</convert>
-    <convert type="ValueBitTest">8</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="FixedLabel" text="A" position="1160,97" zPosition="3" size="20,22" font="Regular;20" halign="center" foregroundColor="white" backgroundColor="background" transparent="1">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">0,0</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="FixedLabel" text="B" position="1180,97" zPosition="3" size="20,22" font="Regular;20" halign="center" foregroundColor="white" backgroundColor="background" transparent="1">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">1,1</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="FixedLabel" text="C" position="1200,97" zPosition="3" size="20,22" font="Regular;20" halign="center" foregroundColor="white" backgroundColor="background" transparent="1">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">2,2</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget source="session.FrontendInfo" render="FixedLabel" text="D" position="1220,97" zPosition="3" size="20,22" font="Regular;20" halign="center" foregroundColor="white" backgroundColor="background" transparent="1">
-    <convert type="FrontendInfo">NUMBER</convert>
-    <convert type="ValueRange">3,3</convert>
-    <convert type="ConditionalShowHide" />
-  </widget>
-  <widget render="VideoSize" source="session.CurrentService" position="1136,120" size="130,25" backgroundColor="background" font="Regular;20" foregroundColor="white" halign="center" valign="center" transparent="1" zPosition="4" />
-</screen>
+    <ePixmap position="center,center" zPosition="1" size="1280,720" pixmap="Army_MoodBlue_mod/infobar_light-fs8.png" />
+    <ePixmap position="202,104" zPosition="2" size="10,16" pixmap="Army_MoodBlue_mod/icons/icon_event.png" alphatest="on" />
+    <widget source="session.CurrentService" render="Label" position="372,38" size="530,32" zPosition="2" font="Regular;28" halign="center" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="transpBlack">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget source="session.CurrentService" render="Picon" position="35,90" size="130,80" zPosition="10" transparent="1" alphatest="on">
+      <convert type="ServiceName">Reference</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="218,95" size="90,36" zPosition="2" halign="left" font="Regular; 28" foregroundColor="white" backgroundColor="background" transparent="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="312,95" size="660,36" zPosition="2" halign="left" font="Regular; 28" foregroundColor="white" backgroundColor="background" transparent="1" noWrap="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="992,95" size="135,37" zPosition="2" halign="right" font="Regular; 28" foregroundColor="white" backgroundColor="background" transparent="1">
+      <convert type="EventTime">Remaining</convert>
+      <convert type="RemainingToText">InMinutes</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Progress" pixmap="Army_MoodBlue_mod/p_bar.png" position="322,81" size="632,6" zPosition="7" transparent="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="218,133" size="90,36" zPosition="2" halign="left" font="Regular; 28" foregroundColor="grey" backgroundColor="background" transparent="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="312,133" size="660,36" zPosition="21" halign="left" font="Regular; 28" foregroundColor="grey" backgroundColor="background" transparent="1" noWrap="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="session.Event_Next" render="Label" position="992,133" size="135,37" zPosition="2" halign="right" font="Regular; 28" foregroundColor="grey" backgroundColor="background" transparent="1">
+      <convert type="EventTime">Duration</convert>
+      <convert type="ClockToText">InMinutes</convert>
+    </widget>
+    <widget source="session.RecordState" render="Pixmap" pixmap="Army_MoodBlue_mod/rec.png" position="1243,49" zPosition="3" size="12,12" alphatest="on">
+      <convert type="ConditionalShowHide">Blink</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="1113,40" size="100,32" zPosition="2" font="LCD; 26" valign="bottom" halign="right" foregroundColor="white" backgroundColor="un333333" transparent="1">
+      <convert type="ClockToText">Default</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="1213,44" size="70,22" zPosition="2" font="LCD;20" valign="bottom" halign="left" backgroundColor="un333333" transparent="1">
+      <convert type="ClockToText">Format::%S</convert>
+    </widget>
+    <widget source="global.CurrentTime" render="Label" position="1004,34" size="122,32" zPosition="2" font="Regular;18" halign="right" backgroundColor="transpBlack" foregroundColor="white" transparent="1" valign="bottom">
+      <convert type="ClockToText">Format:%d.%m.%Y</convert>
+    </widget>
+    <widget source="ServiceEvent" render="Label" position="1151,140" size="100,26" foregroundColor="grey" backgroundColor="background" transparent="1" zPosition="3" font="Regular; 21" halign="center">
+      <convert type="ServiceOrbitalPosition" />
+    </widget>
+    <!--Turner Status (Nim) A-B-C-D -->
+    <eLabel text="A" position="1160,91" zPosition="1" size="20,22" font="Regular;20" halign="center" foregroundColor="grey" backgroundColor="background" transparent="1" />
+    <eLabel text="B" position="1180,91" zPosition="1" size="20,22" font="Regular;20" halign="center" foregroundColor="grey" backgroundColor="background" transparent="1" />
+    <eLabel text="C" position="1200,91" zPosition="1" size="20,22" font="Regular;20" halign="center" foregroundColor="grey" backgroundColor="background" transparent="1" />
+    <eLabel text="D" position="1220,91" zPosition="1" size="20,22" font="Regular;20" halign="center" foregroundColor="grey" backgroundColor="background" transparent="1" />
+    <widget source="session.TunerInfo" render="FixedLabel" text="A" position="1160,91" zPosition="2" size="20,22" font="Regular;20" halign="center" foregroundColor="unf23d21" backgroundColor="un333333" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">1</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="B" position="1180,91" zPosition="2" size="20,22" font="Regular;20" halign="center" foregroundColor="unf23d21" backgroundColor="un333333" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">2</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="C" position="1200,91" zPosition="2" size="20,22" font="Regular;20" halign="center" foregroundColor="unf23d21" backgroundColor="un333333" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">4</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.TunerInfo" render="FixedLabel" text="D" position="1220,91" zPosition="2" size="20,22" font="Regular;20" halign="center" foregroundColor="unf23d21" backgroundColor="un333333" transparent="1">
+      <convert type="TunerInfo">TunerUseMask</convert>
+      <convert type="ValueBitTest">8</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="FixedLabel" text="A" position="1160,91" zPosition="3" size="20,22" font="Regular;20" halign="center" foregroundColor="white" backgroundColor="background" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">0,0</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="FixedLabel" text="B" position="1180,91" zPosition="3" size="20,22" font="Regular;20" halign="center" foregroundColor="white" backgroundColor="background" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">1,1</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="FixedLabel" text="C" position="1200,91" zPosition="3" size="20,22" font="Regular;20" halign="center" foregroundColor="white" backgroundColor="background" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">2,2</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget source="session.FrontendInfo" render="FixedLabel" text="D" position="1220,91" zPosition="3" size="20,22" font="Regular;20" halign="center" foregroundColor="white" backgroundColor="background" transparent="1">
+      <convert type="FrontendInfo">NUMBER</convert>
+      <convert type="ValueRange">3,3</convert>
+      <convert type="ConditionalShowHide" />
+    </widget>
+    <widget render="VideoSize" source="session.CurrentService" position="1136,114" size="130,25" backgroundColor="background" font="Regular;20" foregroundColor="white" halign="center" valign="center" transparent="1" zPosition="4" />
+  </screen>
   <!--  Second Infobar  -->
   <screen name="SecondInfoBar" flags="wfNoBorder" position="0,0" size="1280,720" title="Pli 2.0" backgroundColor="transparent">
     <ePixmap position="0,481" zPosition="1" size="1363,716" pixmap="Army_MoodBlue_mod/infobar-fs8.png" />
     <ePixmap position="200,586" zPosition="2" size="21,14" pixmap="Army_MoodBlue_mod/icons/icon_event.png" alphatest="on" />
-    <widget source="session.CurrentService" render="Label" position="373,518" size="530,32" zPosition="2" font="Regular;28" halign="center" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="background">
+    <widget source="session.CurrentService" render="Label" position="373,519" size="530,32" zPosition="2" font="Regular;28" halign="center" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="background">
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget source="session.CurrentService" zPosition="4" render="Label" position="866,667" size="410,24" backgroundColor="background" foregroundColor="white" transparent="1" font="Display; 16" halign="center">
@@ -418,242 +418,250 @@
   </screen>
   <!-- 83 Main menu infobar -->
   <screen name="menu_mainmenu" position="0,0" size="1280,720" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
-    <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
-    <ePixmap position="832,81" zPosition="-1" size="378,216" pixmap="Army_MoodBlue_mod/tv_2-fs8.png" alphatest="on" />
-    <ePixmap position="58,81" zPosition="2" size="760,550" pixmap="Army_MoodBlue_mod/r760x550.png" alphatest="blend" transparent="1" />
-    <widget source="title" render="Label" position="80,30" size="500,32" font="RegularAA;28" halign="left" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
-    <widget source="session.VideoPicture" render="Pig" position=" 836,84" size="370,208" zPosition="3" backgroundColor="transparent2" />
-    <widget source="menu" render="Listbox" position="80,90" size="710,494" scrollbarMode="showNever" selectionPixmap="Army_MoodBlue_mod/icons/listselection450x38-fs8.png" backgroundPixmap="Army_MoodBlue_mod/icons/butselection.png" transparent="1">
-      <convert type="TemplatedMultiContent">
+<ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+  <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
+  <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
+  <ePixmap position="832,81" zPosition="-1" size="378,216" pixmap="Army_MoodBlue_mod/tv_2-fs8.png" alphatest="on" />
+  <ePixmap position="58,81" zPosition="2" size="760,550" pixmap="Army_MoodBlue_mod/r760x550.png" alphatest="blend" transparent="1" />
+  <widget source="title" render="Label" position="80,30" size="500,32" font="RegularAA;28" halign="left" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
+  <widget source="session.VideoPicture" render="Pig" position=" 836,84" size="370,208" zPosition="3" backgroundColor="transparent2" />
+  <widget source="menu" render="Listbox" position="80,90" size="710,494" scrollbarMode="showNever" selectionPixmap="Army_MoodBlue_mod/icons/listselection450x38-fs8.png" backgroundPixmap="Army_MoodBlue_mod/icons/butselection.png" transparent="1">
+    <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (60, 2), size = (450, 38), flags = RT_HALIGN_LEFT, text = 0) ],
 			"fonts": [gFont("Regular", 26)],
 			"itemHeight": 38
 			}
 				</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="815,330" size="420,32" zPosition="2" font="Regular;28" halign="center" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="background">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Label" position="851,380" size="350,100" zPosition="2" halign="center" font="Regular; 26" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
-      <convert type="EventName">Name</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Progress" pixmap="Army_MoodBlue_mod/chan_p_bar.png" size="300,14" position="870,310" zPosition="1" backgroundColor="darkgrey" transparent="1">
-      <convert type="EventTime">Progress</convert>
-    </widget>
-    <widget source="menu" render="Pixmap" pixmap="Army_MoodBlue_mod/menu/shutdown.png" position="960,470" size="260,160" alphatest="blend" transparent="1">
-      <convert type="MenuEntryCompare">standby_restart_list</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="menu" render="Pixmap" pixmap="Army_MoodBlue_mod/menu/setup.png" position="960,470" size="260,160" alphatest="blend" transparent="1">
-      <convert type="MenuEntryCompare">setup_selection</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="menu" render="Pixmap" pixmap="Army_MoodBlue_mod/menu/plugins.png" position="960,470" size="260,160" alphatest="blend" transparent="1">
-      <convert type="MenuEntryCompare">plugin_selection</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="menu" render="Pixmap" pixmap="Army_MoodBlue_mod/menu/information.png" position="960,470" size="260,160" alphatest="blend" transparent="1">
-      <convert type="MenuEntryCompare">info_screen</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="menu" render="Pixmap" pixmap="Army_MoodBlue_mod/menu/scart.png" position="960,470" size="260,160" alphatest="blend" transparent="1">
-      <convert type="MenuEntryCompare">scart_switch</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="menu" render="Pixmap" pixmap="Army_MoodBlue_mod/menu/timer.png" position="960,470" size="260,160" alphatest="blend" transparent="1">
-      <convert type="MenuEntryCompare">timer_edit</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="menu" render="Pixmap" pixmap="Army_MoodBlue_mod/menu/media_player.png" position="960,470" size="260,160" alphatest="blend" transparent="1">
-      <convert type="MenuEntryCompare">media_player</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-    <widget source="menu" render="Pixmap" pixmap="Army_MoodBlue_mod/menu/dvd_player.png" position="960,470" size="260,160" alphatest="blend" transparent="1">
-      <convert type="MenuEntryCompare">dvd_player</convert>
-      <convert type="ConditionalShowHide" />
-    </widget>
-  </screen>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="815,330" size="420,32" zPosition="2" font="Regular;28" halign="center" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="background">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="851,380" size="350,100" zPosition="2" halign="center" font="Regular; 26" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Progress" pixmap="Army_MoodBlue_mod/chan_p_bar.png" size="300,14" position="870,310" zPosition="1" backgroundColor="darkgrey" transparent="1">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Army_MoodBlue_mod/menu/shutdown.png" position="960,470" size="260,160" alphatest="blend" transparent="1">
+    <convert type="MenuEntryCompare">standby_restart_list</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Army_MoodBlue_mod/menu/setup.png" position="960,470" size="260,160" alphatest="blend" transparent="1">
+    <convert type="MenuEntryCompare">setup_selection</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Army_MoodBlue_mod/menu/plugins.png" position="960,470" size="260,160" alphatest="blend" transparent="1">
+    <convert type="MenuEntryCompare">plugin_selection</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Army_MoodBlue_mod/menu/information.png" position="960,470" size="260,160" alphatest="blend" transparent="1">
+    <convert type="MenuEntryCompare">info_screen</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Army_MoodBlue_mod/menu/scart.png" position="960,470" size="260,160" alphatest="blend" transparent="1">
+    <convert type="MenuEntryCompare">scart_switch</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Army_MoodBlue_mod/menu/timer.png" position="960,470" size="260,160" alphatest="blend" transparent="1">
+    <convert type="MenuEntryCompare">timer_edit</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Army_MoodBlue_mod/menu/media_player.png" position="960,470" size="260,160" alphatest="blend" transparent="1">
+    <convert type="MenuEntryCompare">media_player</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+  <widget source="menu" render="Pixmap" pixmap="Army_MoodBlue_mod/menu/dvd_player.png" position="960,470" size="260,160" alphatest="blend" transparent="1">
+    <convert type="MenuEntryCompare">dvd_player</convert>
+    <convert type="ConditionalShowHide" />
+  </widget>
+</screen>
   <!-- 84 Menu Information -->
   <screen name="menu_information" position="0,0" size="1280,720" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap position="center,center" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
-    <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/information.png" alphatest="on" />
-    <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
-    <ePixmap position="58,81" zPosition="2" size="760,550" pixmap="Army_MoodBlue_mod/r760x550.png" alphatest="blend" transparent="1" />
-    <widget source="title" render="Label" position="80,30" size="500,32" font="RegularAA;28" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1" />
-    <ePixmap position="832,81" zPosition="-1" size="378,216" pixmap="Army_MoodBlue_mod/tv_2-fs8.png" alphatest="on" />
-    <widget source="session.VideoPicture" render="Pig" position=" 836,84" size="370,208" zPosition="3" backgroundColor="transparent2" />
-    <widget source="menu" render="Listbox" position="80,90" size="710,440" scrollbarMode="showNever" selectionPixmap="Army_MoodBlue_mod/icons/listselection450x38-fs8.png" backgroundPixmap="Army_MoodBlue_mod/icons/butselection.png" transparent="1">
-      <convert type="TemplatedMultiContent">
+    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+  <ePixmap position="center,center" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
+  <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/information.png" alphatest="on" />
+  <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
+  <ePixmap position="58,81" zPosition="2" size="760,550" pixmap="Army_MoodBlue_mod/r760x550.png" alphatest="blend" transparent="1" />
+  <widget source="title" render="Label" position="80,30" size="500,32" font="RegularAA;28" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1" />
+  <ePixmap position="832,81" zPosition="-1" size="378,216" pixmap="Army_MoodBlue_mod/tv_2-fs8.png" alphatest="on" />
+  <widget source="session.VideoPicture" render="Pig" position=" 836,84" size="370,208" zPosition="3" backgroundColor="transparent2" />
+  <widget source="menu" render="Listbox" position="80,90" size="710,440" scrollbarMode="showNever" selectionPixmap="Army_MoodBlue_mod/icons/listselection450x38-fs8.png" backgroundPixmap="Army_MoodBlue_mod/icons/butselection.png" transparent="1">
+    <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (60, 2), size = (450, 38), flags = RT_HALIGN_LEFT, text = 0) ],
 			"fonts": [gFont("Regular", 26)],
 			"itemHeight": 38 
 			}
 				</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="815,330" size="420,32" zPosition="2" font="Regular;28" halign="center" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="background">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Label" position="850,380" size="350,100" zPosition="2" halign="center" font="Regular;24" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
-      <convert type="EventName">Name</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Progress" pixmap="Army_MoodBlue_mod/chan_p_bar.png" size="300,14" position="870,310" zPosition="1" backgroundColor="darkgrey" transparent="1">
-      <convert type="EventTime">Progress</convert>
-    </widget>
-  </screen>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="815,335" size="420,32" zPosition="2" font="Regular;28" halign="center" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="background">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="850,380" size="350,100" zPosition="2" halign="center" font="Regular; 26" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Progress" pixmap="Army_MoodBlue_mod/chan_p_bar.png" size="300,14" position="870,310" zPosition="1" backgroundColor="darkgrey" transparent="1">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+</screen>
   <!-- 85 Menu Setup -->
   <screen name="menu_setup" position="0,0" size="1280,720" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
-    <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/setup.png" alphatest="on" />
-    <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
-    <ePixmap position="58,81" zPosition="2" size="760,550" pixmap="Army_MoodBlue_mod/r760x550.png" alphatest="blend" transparent="1" />
-    <widget source="title" render="Label" position="80,30" size="500,32" font="RegularAA;28" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1" />
-    <ePixmap position="832,81" zPosition="-1" size="378,216" pixmap="Army_MoodBlue_mod/tv_2-fs8.png" alphatest="on" />
-    <widget source="session.VideoPicture" render="Pig" position=" 836,84" size="370,208" zPosition="3" backgroundColor="transparent2" />
-    <widget source="menu" render="Listbox" position="80,90" size="710,440" scrollbarMode="showNever" selectionPixmap="Army_MoodBlue_mod/icons/listselection450x38-fs8.png" backgroundPixmap="Army_MoodBlue_mod/icons/butselection.png" transparent="1">
-      <convert type="TemplatedMultiContent">
+<ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+  <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
+  <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/setup.png" alphatest="on" />
+  <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
+  <ePixmap position="58,81" zPosition="2" size="760,550" pixmap="Army_MoodBlue_mod/r760x550.png" alphatest="blend" transparent="1" />
+  <widget source="title" render="Label" position="80,30" size="500,32" font="RegularAA;28" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1" />
+  <ePixmap position="832,81" zPosition="-1" size="378,216" pixmap="Army_MoodBlue_mod/tv_2-fs8.png" alphatest="on" />
+  <widget source="session.VideoPicture" render="Pig" position=" 836,84" size="370,208" zPosition="3" backgroundColor="transparent2" />
+  <widget source="menu" render="Listbox" position="80,90" size="710,440" scrollbarMode="showNever" selectionPixmap="Army_MoodBlue_mod/icons/listselection450x38-fs8.png" backgroundPixmap="Army_MoodBlue_mod/icons/butselection.png" transparent="1">
+    <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (60,2), size = (450, 38), flags = RT_HALIGN_LEFT, text = 0) ],
 			"fonts": [gFont("Regular", 26)],
 			"itemHeight": 38 
 			}
 				</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="815,330" size="420,32" zPosition="2" font="Regular;28" halign="center" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="background">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Label" position="850,380" size="350,100" zPosition="2" halign="center" font="Regular;24" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
-      <convert type="EventName">Name</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Progress" pixmap="Army_MoodBlue_mod/chan_p_bar.png" size="300,14" position="870,310" zPosition="1" backgroundColor="darkgrey" transparent="1">
-      <convert type="EventTime">Progress</convert>
-    </widget>
-  </screen>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="815,330" size="420,32" zPosition="2" font="Regular;28" halign="center" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="background">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="850,380" size="350,100" zPosition="2" halign="center" font="Regular; 26" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Progress" pixmap="Army_MoodBlue_mod/chan_p_bar.png" size="300,14" position="870,310" zPosition="1" backgroundColor="darkgrey" transparent="1">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+</screen>
   <!-- 86 Menu Scan -->
   <screen name="menu_scan" position="0,0" size="1280,720" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
-    <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/scan.png" alphatest="on" />
-    <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
-    <ePixmap position="58,81" zPosition="2" size="760,550" pixmap="Army_MoodBlue_mod/r760x550.png" alphatest="blend" transparent="1" />
-    <widget source="title" render="Label" position="80,30" size="500,32" font="RegularAA;28" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1" />
-    <ePixmap position="832,81" zPosition="-1" size="378,216" pixmap="Army_MoodBlue_mod/tv_2-fs8.png" alphatest="on" />
-    <widget source="session.VideoPicture" render="Pig" position=" 836,84" size="370,208" zPosition="3" backgroundColor="transparent2" />
-    <widget source="menu" render="Listbox" position="80,90" size="710,440" scrollbarMode="showNever" selectionPixmap="Army_MoodBlue_mod/icons/listselection450x38-fs8.png" backgroundPixmap="Army_MoodBlue_mod/icons/butselection.png" transparent="1">
-      <convert type="TemplatedMultiContent">
+<ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+  <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
+  <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/scan.png" alphatest="on" />
+  <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
+  <ePixmap position="58,81" zPosition="2" size="760,550" pixmap="Army_MoodBlue_mod/r760x550.png" alphatest="blend" transparent="1" />
+  <widget source="title" render="Label" position="80,30" size="500,32" font="RegularAA;28" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1" />
+  <ePixmap position="832,81" zPosition="-1" size="378,216" pixmap="Army_MoodBlue_mod/tv_2-fs8.png" alphatest="on" />
+  <widget source="session.VideoPicture" render="Pig" position=" 836,84" size="370,208" zPosition="3" backgroundColor="transparent2" />
+  <widget source="menu" render="Listbox" position="80,90" size="710,440" scrollbarMode="showNever" selectionPixmap="Army_MoodBlue_mod/icons/listselection450x38-fs8.png" backgroundPixmap="Army_MoodBlue_mod/icons/butselection.png" transparent="1">
+    <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (60, 2), size = (450, 38), flags = RT_HALIGN_LEFT, text = 0) ],
 			"fonts": [gFont("Regular", 26)],
 			"itemHeight": 38 
 			}
 				</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="815,330" size="420,32" zPosition="2" font="Regular;28" halign="center" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="background">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Label" position="850,380" size="350,100" zPosition="2" halign="center" font="Regular;24" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
-      <convert type="EventName">Name</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Progress" pixmap="Army_MoodBlue_mod/chan_p_bar.png" size="300,14" position="870,310" zPosition="1" backgroundColor="darkgrey" transparent="1">
-      <convert type="EventTime">Progress</convert>
-    </widget>
-  </screen>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="815,330" size="420,32" zPosition="2" font="Regular;28" halign="center" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="background">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="850,380" size="350,100" zPosition="2" halign="center" font="Regular; 26" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Progress" pixmap="Army_MoodBlue_mod/chan_p_bar.png" size="300,14" position="870,310" zPosition="1" backgroundColor="darkgrey" transparent="1">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+</screen>
   <!-- 87 Menu System -->
   <screen name="menu_system" position="0,0" size="1280,720" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
-    <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/system.png" alphatest="on" />
-    <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
-    <ePixmap position="764,110" zPosition="2" size="26,494" pixmap="Army_MoodBlue_mod/scroll_tv.png" alphatest="blend" transparent="1" />
-    <ePixmap position="58,81" zPosition="2" size="760,550" pixmap="Army_MoodBlue_mod/r760x550.png" alphatest="blend" transparent="1" />
-    <widget source="title" render="Label" position="80,30" size="500,32" font="RegularAA;28" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1" />
-    <ePixmap position="832,81" zPosition="-1" size="378,216" pixmap="Army_MoodBlue_mod/tv_2-fs8.png" alphatest="on" />
-    <widget source="session.VideoPicture" render="Pig" position=" 836,84" size="370,208" zPosition="3" backgroundColor="transparent2" />
-    <widget source="menu" render="Listbox" position="80,110" size="710,494" scrollbarMode="showOnDemand" selectionPixmap="Army_MoodBlue_mod/icons/listselection450x38-fs8.png" backgroundPixmap="Army_MoodBlue_mod/icons/butselection.png" transparent="1">
-      <convert type="TemplatedMultiContent">
+<ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+  <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
+  <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/system.png" alphatest="on" />
+  <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
+  <ePixmap position="764,110" zPosition="2" size="26,494" pixmap="Army_MoodBlue_mod/scroll_tv.png" alphatest="blend" transparent="1" />
+  <ePixmap position="58,81" zPosition="2" size="760,550" pixmap="Army_MoodBlue_mod/r760x550.png" alphatest="blend" transparent="1" />
+  <widget source="title" render="Label" position="80,30" size="500,32" font="RegularAA;28" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1" />
+  <ePixmap position="832,81" zPosition="-1" size="378,216" pixmap="Army_MoodBlue_mod/tv_2-fs8.png" alphatest="on" />
+  <widget source="session.VideoPicture" render="Pig" position=" 836,84" size="370,208" zPosition="3" backgroundColor="transparent2" />
+  <widget source="menu" render="Listbox" position="80,110" size="710,494" scrollbarMode="showOnDemand" selectionPixmap="Army_MoodBlue_mod/icons/listselection450x38-fs8.png" backgroundPixmap="Army_MoodBlue_mod/icons/butselection.png" transparent="1">
+    <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (60, 2), size = (450, 38), flags = RT_HALIGN_LEFT, text = 0) ],
 			"fonts": [gFont("Regular", 26)],
 			"itemHeight": 38 
 			}
 				</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="815,330" size="420,32" zPosition="2" font="Regular;28" halign="center" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="background">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Label" position="850,380" size="350,100" zPosition="2" halign="center" font="Regular;24" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
-      <convert type="EventName">Name</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Progress" pixmap="Army_MoodBlue_mod/chan_p_bar.png" size="300,14" position="870,310" zPosition="1" backgroundColor="darkgrey" transparent="1">
-      <convert type="EventTime">Progress</convert>
-    </widget>
-  </screen>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="815,330" size="420,32" zPosition="2" font="Regular;28" halign="center" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="background">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="850,380" size="350,100" zPosition="2" halign="center" font="Regular; 26" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Progress" pixmap="Army_MoodBlue_mod/chan_p_bar.png" size="300,14" position="870,310" zPosition="1" backgroundColor="darkgrey" transparent="1">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+</screen>
   <!-- 88 Menu HDD -->
   <screen name="menu_harddisk" position="0,0" size="1280,720" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
-    <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/hdd.png" alphatest="on" />
-    <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
-    <ePixmap position="58,81" zPosition="2" size="760,550" pixmap="Army_MoodBlue_mod/r760x550.png" alphatest="blend" transparent="1" />
-    <widget source="title" render="Label" position="80,30" size="500,32" font="RegularAA;28" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1" />
-    <ePixmap position="832,81" zPosition="-1" size="378,216" pixmap="Army_MoodBlue_mod/tv_2-fs8.png" alphatest="on" />
-    <widget source="session.VideoPicture" render="Pig" position=" 836,84" size="370,208" zPosition="3" backgroundColor="transparent2" />
-    <widget source="menu" render="Listbox" position="80,90" size="710,440" scrollbarMode="showNever" selectionPixmap="Army_MoodBlue_mod/icons/listselection450x38-fs8.png" backgroundPixmap="Army_MoodBlue_mod/icons/butselection.png" transparent="1">
-      <convert type="TemplatedMultiContent">
+<ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+  <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
+  <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/hdd.png" alphatest="on" />
+  <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
+  <ePixmap position="58,81" zPosition="2" size="760,550" pixmap="Army_MoodBlue_mod/r760x550.png" alphatest="blend" transparent="1" />
+  <widget source="title" render="Label" position="80,30" size="500,32" font="RegularAA;28" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1" />
+  <ePixmap position="832,81" zPosition="-1" size="378,216" pixmap="Army_MoodBlue_mod/tv_2-fs8.png" alphatest="on" />
+  <widget source="session.VideoPicture" render="Pig" position=" 836,84" size="370,208" zPosition="3" backgroundColor="transparent2" />
+  <widget source="menu" render="Listbox" position="80,90" size="710,440" scrollbarMode="showNever" selectionPixmap="Army_MoodBlue_mod/icons/listselection450x38-fs8.png" backgroundPixmap="Army_MoodBlue_mod/icons/butselection.png" transparent="1">
+    <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (60, 2), size = (450, 38), flags = RT_HALIGN_LEFT, text = 0) ],
 			"fonts": [gFont("Regular", 26)],
 			"itemHeight": 38 
 			}
 				</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="815,330" size="420,32" zPosition="2" font="Regular;28" halign="center" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="background">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Label" position="850,380" size="350,100" zPosition="2" halign="center" font="Regular;24" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
-      <convert type="EventName">Name</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Progress" pixmap="Army_MoodBlue_mod/chan_p_bar.png" size="300,14" position="870,310" zPosition="1" backgroundColor="darkgrey" transparent="1">
-      <convert type="EventTime">Progress</convert>
-    </widget>
-  </screen>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="815,330" size="420,32" zPosition="2" font="Regular;28" halign="center" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="background">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="850,380" size="350,100" zPosition="2" halign="center" font="Regular; 26" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Progress" pixmap="Army_MoodBlue_mod/chan_p_bar.png" size="300,14" position="870,310" zPosition="1" backgroundColor="darkgrey" transparent="1">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+</screen>
   <!-- 89 Menu Shutdown -->
   <screen name="menu_shutdown" position="0,0" size="1280,720" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
-    <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/shutdown.png" alphatest="on" />
-    <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
-    <ePixmap position="58,81" zPosition="2" size="760,550" pixmap="Army_MoodBlue_mod/r760x550.png" alphatest="blend" transparent="1" />
-    <widget source="title" render="Label" position="80,30" size="500,32" font="RegularAA;28" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1" />
-    <ePixmap position="832,81" zPosition="-1" size="378,216" pixmap="Army_MoodBlue_mod/tv_2-fs8.png" alphatest="on" />
-    <widget source="session.VideoPicture" render="Pig" position=" 836,84" size="370,208" zPosition="3" backgroundColor="transparent2" />
-    <widget source="menu" render="Listbox" position="80,90" size="710,440" scrollbarMode="showNever" selectionPixmap="Army_MoodBlue_mod/icons/listselection450x38-fs8.png" backgroundPixmap="Army_MoodBlue_mod/icons/butselection.png" transparent="1">
-      <convert type="TemplatedMultiContent">
+<ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+  <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
+  <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/shutdown.png" alphatest="on" />
+  <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
+  <ePixmap position="58,81" zPosition="2" size="760,550" pixmap="Army_MoodBlue_mod/r760x550.png" alphatest="blend" transparent="1" />
+  <widget source="title" render="Label" position="80,30" size="500,32" font="RegularAA;28" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1" />
+  <ePixmap position="832,81" zPosition="-1" size="378,216" pixmap="Army_MoodBlue_mod/tv_2-fs8.png" alphatest="on" />
+  <widget source="session.VideoPicture" render="Pig" position=" 836,84" size="370,208" zPosition="3" backgroundColor="transparent2" />
+  <widget source="menu" render="Listbox" position="80,90" size="710,440" scrollbarMode="showNever" selectionPixmap="Army_MoodBlue_mod/icons/listselection450x38-fs8.png" backgroundPixmap="Army_MoodBlue_mod/icons/butselection.png" transparent="1">
+    <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (60, 2), size = (450, 38), flags = RT_HALIGN_LEFT, text = 0) ],
 			"fonts": [gFont("Regular", 26)],
 			"itemHeight": 38 
 			}
 				</convert>
-    </widget>
-    <widget source="session.CurrentService" render="Label" position="815,330" size="420,32" zPosition="2" font="Regular;28" halign="center" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="background">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Label" position="850,380" size="350,100" zPosition="2" halign="center" font="Regular;24" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
-      <convert type="EventName">Name</convert>
-    </widget>
-    <widget source="session.Event_Now" render="Progress" pixmap="Army_MoodBlue_mod/chan_p_bar.png" size="300,14" position="870,310" zPosition="1" backgroundColor="darkgrey" transparent="1">
-      <convert type="EventTime">Progress</convert>
-    </widget>
-  </screen>
+  </widget>
+  <widget source="session.CurrentService" render="Label" position="815,330" size="420,32" zPosition="2" font="Regular;28" halign="center" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="background">
+    <convert type="ServiceName">Name</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Label" position="850,380" size="350,100" zPosition="2" halign="center" font="Regular; 26" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
+    <convert type="EventName">Name</convert>
+  </widget>
+  <widget source="session.Event_Now" render="Progress" pixmap="Army_MoodBlue_mod/chan_p_bar.png" size="300,14" position="870,310" zPosition="1" backgroundColor="darkgrey" transparent="1">
+    <convert type="EventTime">Progress</convert>
+  </widget>
+</screen>
   <!--  90 About -->
   <screen name="About" position="0,0" size="1280,720" title="About" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
-    <ePixmap position="900,110" zPosition="-1" size="280,210" pixmap="Army_MoodBlue_mod/prev.png" alphatest="blend" transparent="1" />
-    <ePixmap position="58,81" zPosition="2" size="760,550" pixmap="Army_MoodBlue_mod/r760x550.png" alphatest="blend" transparent="1" />
-    <ePixmap position="870,400" zPosition="2" size="350,46" pixmap="Army_MoodBlue_mod/logoBH.png" alphatest="blend" transparent="1" />
-    <eLabel text="About" position="80,30" size="410,34" font="RegularAA;28" halign="left" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
-    <widget source="EnigmaVersion" render="Label" position="78,150" size="580,28" font="Regular;24" halign="left" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
-    <widget source="ImageVersion" render="Label" position="78,180" size="580,28" font="Regular;24" halign="left" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
-    <widget source="TunerHeader" render="Label" position="78,250" size="580,28" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
-    <widget source="Tuner0" render="Label" position="78,280" size="580,28" font="Regular;24" halign="left" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
-    <widget source="Tuner1" render="Label" position="78,310" size="580,28" font="Regular;24" halign="left" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
-    <widget source="Tuner2" render="Label" position="78,340" size="580,28" font="Regular;24" halign="left" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
-    <widget source="Tuner3" render="Label" position="78,370" size="580,28" font="Regular;24" halign="left" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
-    <widget source="HDDHeader" render="Label" position="78,430" size="580,28" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
-    <widget source="hddA" render="Label" position="78,460" size="650,28" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" foregroundColor="un99ff" />
-  </screen>
+<ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="82,100" size="120,34" alphatest="on" zPosition="3" />
+  <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
+  <ePixmap position="900,110" zPosition="-1" size="280,210" pixmap="Army_MoodBlue_mod/prev.png" alphatest="blend" transparent="1" />
+  <ePixmap position="58,81" zPosition="2" size="760,550" pixmap="Army_MoodBlue_mod/r760x550.png" alphatest="blend" transparent="1" />
+  
+  <eLabel text="About" position="80,30" size="410,34" font="RegularAA;28" halign="left" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
+  <widget source="EnigmaVersion" render="Label" position="78,150" size="580,28" font="Regular;24" halign="left" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
+  <widget source="ImageVersion" render="Label" position="78,180" size="580,28" font="Regular;24" halign="left" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
+  <widget source="TunerHeader" render="Label" position="78,250" size="580,28" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
+  <widget source="Tuner0" render="Label" position="78,280" size="580,28" font="Regular;24" halign="left" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
+  <widget source="Tuner1" render="Label" position="78,310" size="580,28" font="Regular;24" halign="left" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
+  <widget source="Tuner2" render="Label" position="78,340" size="580,28" font="Regular;24" halign="left" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
+  <widget source="Tuner3" render="Label" position="78,370" size="580,28" font="Regular;24" halign="left" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
+  <widget source="HDDHeader" render="Label" position="78,430" size="580,28" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" />
+  <widget source="hddA" render="Label" position="78,460" size="650,28" font="Regular;24" halign="left" backgroundColor="transpBlack" transparent="1" foregroundColor="un99ff" />
+</screen>
   <!-- Adapter Setup  -->
   <screen name="AdapterSetup" position="center,center" size="1160,560" title="Network Setup">
     <widget source="Adaptertext" render="Label" position="20,20" size="140,28" zPosition="10" font="Regular;24" transparent="1" />
