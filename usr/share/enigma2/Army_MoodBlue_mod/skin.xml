@@ -1089,12 +1089,12 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     <widget name="now_text" position="268,104" zPosition="4" size="250,25" text="NOW" font="RegularAA; 20" halign="center" foregroundColor="white" backgroundColor="grey" transparent="1" />
     <widget name="next_text" position="520,104" zPosition="4" size="250,25" text="NEXT" font="Regular;20" halign="center" foregroundColor="white" backgroundColor="grey" transparent="1" />
     <widget name="more_text" position="772,104" zPosition="4" size="250,25" text="MORE" font="Regular;20" halign="center" foregroundColor="white" backgroundColor="grey" transparent="1" />
-    <widget name="date" position="20,104" size="240,25" font="Regular;24" valign="center" halign="left" backgroundColor="transpBlack" transparent="1" />
-    <ePixmap pixmap="Army_MoodBlue_mod/icons/clock.png" position="1083,110" size="14,14" zPosition="1" alphatest="blend" />
-    <widget source="global.CurrentTime" render="Label" position="1103,100" size="140,34" zPosition="1" font="LCD;32" valign="top" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1">
+    <widget name="date" position="20,104" size="240,25" font="Regular; 20" valign="center" halign="center" backgroundColor="transpBlack" transparent="1" />
+    <ePixmap pixmap="Army_MoodBlue_mod/icons/clock.png" position="1077,110" size="14,14" zPosition="1" alphatest="blend" />
+    <widget source="global.CurrentTime" render="Label" position="1098,100" size="140,34" zPosition="1" font="LCD;32" valign="top" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1170,100" size="70,22" zPosition="1" font="LCD;20" valign="top" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="1175,100" size="70,22" zPosition="1" font="LCD;20" valign="top" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
     </widget>
     <widget name="list" position="100,175" size="1094,428" scrollbarMode="showOnDemand" transparent="1" />
