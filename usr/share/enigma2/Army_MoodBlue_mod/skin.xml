@@ -646,7 +646,7 @@
   </screen>
   <!--  90 About -->
   <screen name="About" position="0,0" size="1280,720" title="About" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="82,100" size="120,34" alphatest="on" zPosition="3" />
+    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="81,100" size="120,34" alphatest="on" zPosition="3" />
     <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="900,110" zPosition="-1" size="280,210" pixmap="Army_MoodBlue_mod/prev.png" alphatest="blend" transparent="1" />
     <ePixmap position="58,81" zPosition="2" size="760,550" pixmap="Army_MoodBlue_mod/r760x550.png" alphatest="blend" transparent="1" />
@@ -1271,10 +1271,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="global.CurrentTime" render="Label" position="1026,75" size="140,34" zPosition="2" font="LCD;32" valign="top" halign="right" foregroundColor="white" backgroundColor="transpBlack" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1120,76" size="70,22" zPosition="2" font="LCD;20" valign="top" halign="right" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="1123,76" size="70,22" zPosition="2" font="LCD;20" valign="top" halign="right" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="78,78" size="140,24" font="Regular;22" halign="center" foregroundColor="white" backgroundColor="transpBlack" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="82,75" size="140,34" font="LCD; 32" halign="center" foregroundColor="white" backgroundColor="transpBlack" transparent="1" valign="top">
       <convert type="ClockToText">Format:%d.%m.%Y</convert>
     </widget>
     <widget source="session.CurrentService" render="Label" position="372,69" size="530,30" zPosition="2" font="Regular;26" halign="center" noWrap="1" foregroundColor="white" transparent="1" backgroundColor="background">
@@ -1311,7 +1311,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="session.CurrentService" render="Label" position="974,126" size="100,26" font="Regular;22" halign="left" foregroundColor="white" backgroundColor="transpBlack" transparent="1">
       <convert type="ServicePosition">Remaining</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="600,160" size="130,25" font="Regular;24" halign="center" foregroundColor="white" backgroundColor="transpBlack" transparent="1">
+    <widget source="session.CurrentService" render="Label" position="600,160" size="130,25" font="Regular; 26" halign="center" foregroundColor="white" backgroundColor="transpBlack" transparent="1">
       <convert type="ServicePosition">Length</convert>
     </widget>
     <ePixmap position="62,124" zPosition="1" size="168,34" pixmap="Army_MoodBlue_mod/mp_buttons.png" alphatest="on" transparent="1" />
@@ -1497,16 +1497,16 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <!-- 134 Radio InfoBar -->
   <screen name="RadioInfoBar" position="0,490" size="1280,230" title="InfoBar" flags="wfNoBorder" zPosition="-1">
     <ePixmap position="0,0" zPosition="-10" size="1280,720" pixmap="Army_MoodBlue_mod/radio_osd-fs8.png" transparent="1" />
-    <ePixmap pixmap="Army_MoodBlue_mod/picon_default.png" position="70,123" size="100,60" zPosition="1" alphatest="blend" />
-    <ePixmap position="1169,138" zPosition="1" size="43,59" pixmap="Army_MoodBlue_mod/bar_radio.png" alphatest="on" />
+    <ePixmap pixmap="Army_MoodBlue_mod/picon_default.png" position="60,130" size="100,60" zPosition="1" alphatest="blend" />
+    <ePixmap position="1218,129" zPosition="1" size="43,59" pixmap="Army_MoodBlue_mod/bar_radio.png" alphatest="on" />
     <ePixmap pixmap="Army_MoodBlue_mod/ico_rec_off.png" position="1120,166" size="44,26" zPosition="1" alphatest="blend" />
     <widget source="session.RecordState" render="Pixmap" pixmap="Army_MoodBlue_mod/ico_rec_on.png" position="1126,166" size="44,26" zPosition="2" alphatest="blend">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="375,74" size="530,30" font="Regular;24" halign="center" valign="top" noWrap="1" backgroundColor="darkgrey" transparent="1">
+    <widget source="session.CurrentService" render="Label" position="373,66" size="530,30" font="Regular; 26" halign="center" valign="top" noWrap="1" backgroundColor="darkgrey" transparent="1">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="980,120" size="220,24" font="Regular;20" halign="right" foregroundColor="white" backgroundColor="un333333" transparent="1">
+    <widget source="session.CurrentService" render="Label" position="980,122" size="220,28" font="Regular; 23" halign="right" foregroundColor="white" backgroundColor="un333333" transparent="1">
       <convert type="ServiceName">Provider</convert>
     </widget>
     <widget source="session.Event_Now" render="Label" position="210,122" size="70,25" font="Regular;23" halign="right" foregroundColor="white" backgroundColor="un333333" transparent="1">
@@ -1519,12 +1519,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="ClockToText">Default</convert>
     </widget>
     <eLabel text="(" position="370,122" size="10,23" font="Regular;21" halign="center" foregroundColor="white" backgroundColor="un333333" transparent="1" />
-    <widget source="session.Event_Now" render="Label" position="380,122" size="110,23" font="Regular;21" halign="center" foregroundColor="white" backgroundColor="un333333" transparent="1">
+    <widget source="session.Event_Now" render="Label" position="380,122" size="110,23" font="Regular; 22" halign="center" foregroundColor="white" backgroundColor="un333333" transparent="1">
       <convert type="EventTime">Remaining</convert>
       <convert type="RemainingToText">InMinutes</convert>
     </widget>
     <eLabel text=")" position="480,122" size="10,23" font="Regular;21" halign="center" foregroundColor="white" backgroundColor="un333333" transparent="1" />
-    <widget source="session.Event_Now" render="Label" position="505,122" size="400,28" font="Regular;22" halign="left" foregroundColor="white" backgroundColor="un333333" transparent="1">
+    <widget source="session.Event_Now" render="Label" position="505,122" size="400,28" font="Regular; 23" halign="left" foregroundColor="white" backgroundColor="un333333" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
     <widget source="session.Event_Now" render="Progress" pixmap="Army_MoodBlue_mod/p_bar.png" position="322,111" size="632,6" zPosition="7" transparent="1">
@@ -1540,12 +1540,12 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="ClockToText">Default</convert>
     </widget>
     <eLabel text="(" position="370,150" size="10,23" font="Regular;21" halign="center" foregroundColor="grey" backgroundColor="black" transparent="1" />
-    <widget source="session.Event_Next" render="Label" position="380,150" size="110,23" font="Regular;21" halign="center" foregroundColor="grey" backgroundColor="black" transparent="1">
+    <widget source="session.Event_Next" render="Label" position="380,150" size="110,23" font="Regular; 22" halign="center" foregroundColor="grey" backgroundColor="black" transparent="1">
       <convert type="EventTime">Duration</convert>
       <convert type="ClockToText">InMinutes</convert>
     </widget>
     <eLabel text=")" position="480,150" size="10,23" font="Regular;21" halign="center" foregroundColor="grey" backgroundColor="black" transparent="1" />
-    <widget source="session.Event_Next" render="Label" position="505,150" size="400,28" font="Regular;22" halign="left" foregroundColor="grey" backgroundColor="black" transparent="1">
+    <widget source="session.Event_Next" render="Label" position="505,150" size="400,28" font="Regular; 23" halign="left" foregroundColor="grey" backgroundColor="black" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
     <widget source="RdsDecoder" render="Pixmap" pixmap="Army_MoodBlue_mod/icons/rass_logo.png" position="943,107" size="100,60" alphatest="blend">
@@ -1587,28 +1587,28 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="Frontend" render="Label" position="405,10" zPosition="2" size="280,20" font="Regular;19" halign="center" valign="center" transparent="1">
       <convert type="FrontendInfo">SNRdB</convert>
     </widget>
-    <eLabel name="snr" text="SNR:" position="315,35" size="60,22" font="Regular;21" halign="right" transparent="1" />
+    <eLabel name="snr" text="SNR:" position="315,35" size="60,22" font="Regular;21" halign="left" transparent="1" foregroundColor="un99ff" />
     <widget source="Frontend" render="Progress" position="405,35" size="280,20" pixmap="Army_MoodBlue_mod/bar_snr_finder.png" borderWidth="2" borderColor="uncccccc">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <widget source="Frontend" render="Label" position="705,35" size="60,22" font="Regular;21">
+    <widget source="Frontend" render="Label" position="705,35" size="65,22" font="Regular;21">
       <convert type="FrontendInfo">SNR</convert>
     </widget>
-    <eLabel name="agc" text="AGC:" position="315,60" size="60,22" font="Regular;21" halign="right" transparent="1" />
+    <eLabel name="agc" text="AGC:" position="315,60" size="60,22" font="Regular;21" halign="left" transparent="1" foregroundColor="un99ff" />
     <widget source="Frontend" render="Progress" position="405,60" size="280,20" pixmap="Army_MoodBlue_mod/bar_snr_finder.png" borderWidth="2" borderColor="uncccccc">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
-    <widget source="Frontend" render="Label" position="705,60" size="60,22" font="Regular;21">
+    <widget source="Frontend" render="Label" position="705,60" size="65,22" font="Regular;21">
       <convert type="FrontendInfo">AGC</convert>
     </widget>
-    <eLabel name="ber" text="BER:" position="315,85" size="60,22" font="Regular;21" halign="right" transparent="1" />
+    <eLabel name="ber" text="BER:" position="315,85" size="60,22" font="Regular;21" halign="left" transparent="1" foregroundColor="un99ff" />
     <widget source="Frontend" render="Progress" position="405,85" size="280,20" pixmap="Army_MoodBlue_mod/bar_ber_finder.png" borderWidth="2" borderColor="uncccccc">
       <convert type="FrontendInfo">BER</convert>
     </widget>
-    <widget source="Frontend" render="Label" position="705,85" size="60,22" font="Regular;21">
+    <widget source="Frontend" render="Label" position="705,85" size="65,22" font="Regular;21">
       <convert type="FrontendInfo">BER</convert>
     </widget>
-    <eLabel name="lock" text="Lock:" position="315,115" size="80,25" font="Regular;21" halign="right" />
+    <eLabel name="lock" text="LOCK:" position="315,115" size="80,25" font="Regular;21" halign="left" />
     <widget source="Frontend" render="Pixmap" pixmap="Army_MoodBlue_mod/icons/lock_on.png" position="405,110" zPosition="1" size="38,31" alphatest="on">
       <convert type="FrontendInfo">LOCK</convert>
       <convert type="ConditionalShowHide" />
@@ -1646,7 +1646,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap position="302,460" size="250,40" pixmap="Army_MoodBlue_mod/buttons/green25.png" alphatest="on" zPosition="1" />
     <ePixmap position="578,460" size="250,40" pixmap="Army_MoodBlue_mod/buttons/yellow25.png" alphatest="on" zPosition="1" />
     <ePixmap position="854,460" size="250,40" pixmap="Army_MoodBlue_mod/buttons/blue25.png" alphatest="on" zPosition="1" />
-    <widget name="red" position="26,460" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
+    <widget name="red" position="8,460" zPosition="2" size="270,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
     <widget name="green" position="302,460" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
     <widget name="yellow" position="578,460" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
     <widget name="blue" position="854,460" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
