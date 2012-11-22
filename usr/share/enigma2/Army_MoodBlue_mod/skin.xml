@@ -1133,63 +1133,60 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
   </screen>
   <!-- 110 Graph MultiEPG ( 2S )-->
   <screen name="GraphMultiEPG" position="0,0" size="1280,720" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="transparent">
-    <ePixmap pixmap="Army_MoodBlue_mod/frame_base-fs8.png" position="center,center" zPosition="-3" size="1280,720" alphatest="on" transparent="1" />
-    <widget source="Title" render="Label" position="80,30" zPosition="2" size="400,34" font="RegularAA;28" halign="left" transparent="1" foregroundColor="un99ff" backgroundColor="transpBlack" />
-    <ePixmap position="43,678" size="250,40" pixmap="Army_MoodBlue_mod/buttons/red25.png" alphatest="on" zPosition="1" />
-    <ePixmap position="356,678" size="250,40" pixmap="Army_MoodBlue_mod/buttons/green25.png" alphatest="on" zPosition="1" />
-    <ePixmap position="670,678" size="250,40" pixmap="Army_MoodBlue_mod/buttons/yellow25.png" alphatest="on" zPosition="1" />
-    <ePixmap position="983,678" size="250,40" pixmap="Army_MoodBlue_mod/buttons/blue25.png" alphatest="on" zPosition="1" />
-    <widget name="key_red" position="43,678" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-    <widget name="key_green" position="356,678" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-    <widget name="key_yellow" position="670,678" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="una18120" transparent="1" />
-    <widget name="key_blue" position="983,678" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-    <widget source="session.VideoPicture" render="Pig" position="45,110" size="417,243" backgroundColor="transparent" zPosition="1" />
-    <widget source="session.CurrentService" render="Label" position="45,89" size="417,20" zPosition="1" foregroundColor="white" backgroundColor="background" font="Regular;19" noWrap="1" valign="center" halign="center">
-      <convert type="ServiceName">Name</convert>
-    </widget>
-    <widget source="Event" render="Label" position="520,110" size="150,24" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;20" valign="top">
-      <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText">ShortDate</convert>
-    </widget>
-    <widget source="Event" render="Label" position="610,110" size="80,24" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;20" halign="right" valign="top">
-      <convert type="EventTime">StartTime</convert>
-      <convert type="ClockToText" />
-    </widget>
-    <widget source="Event" render="Label" position="690,110" size="80,24" backgroundColor="background" transparent="1" foregroundColor="yellow" font="Regular;20" halign="left" valign="top">
-      <convert type="EventTime">EndTime</convert>
-      <convert type="ClockToText">Format: - %H:%M</convert>
-    </widget>
-    <widget source="Event" render="Label" position="780,110" size="380,24" backgroundColor="background" transparent="1" foregroundColor="white" font="Regular;20" valign="top">
+    <ePixmap pixmap="Army_MoodBlue_mod/frame_base-fs8.png" position="0,0" zPosition="-3" size="1280,720" alphatest="on" transparent="1" />
+    <ePixmap position="58,81" zPosition="2" size="806,550" pixmap="Army_MoodBlue_mod/r806x550.png" alphatest="blend" transparent="1" />
+    <ePixmap position="834,155" zPosition="2" size="26,448" pixmap="Army_MoodBlue_mod/scroll_graph.png" alphatest="blend" transparent="1" />
+    <ePixmap position="914,270" zPosition="1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
+    <widget source="title" render="Label" position="80,30" zPosition="2" size="400,34" font="RegularAA;28" halign="left" transparent="1" foregroundColor="un99ff" backgroundColor="transpBlack" />
+    <widget name="timeline_text" position="70,110" size="800,30" transparent="1" />
+    <widget name="list" position="80,160" size="780,438" scrollbarMode="showOnDemand" EntryBorderColor="#11362d" EntryBackgroundColor="#2f4964" EntryBackgroundColorSelected="#073a6c" transparent="1" />
+    <eLabel position="70,160" size="760,1" backgroundColor="un99ff" />
+    <eLabel position="70,214" size="760,1" backgroundColor="un99ff" />
+    <eLabel position="70,268" size="760,1" backgroundColor="un99ff" />
+    <eLabel position="70,322" size="760,1" backgroundColor="un99ff" />
+    <eLabel position="70,376" size="760,1" backgroundColor="un99ff" />
+    <eLabel position="70,430" size="760,1" backgroundColor="un99ff" />
+    <eLabel position="70,484" size="760,1" backgroundColor="un99ff" />
+    <eLabel position="70,538" size="760,1" backgroundColor="un99ff" />
+    <eLabel position="70,592" size="760,1" backgroundColor="un99ff" />
+    <widget name="timeline0" position="70,155" zPosition="1" size="1,442" pixmap="Army_MoodBlue_mod/timeline.png" />
+    <widget name="timeline1" position="70,155" zPosition="1" size="1,442" pixmap="Army_MoodBlue_mod/timeline.png" />
+    <widget name="timeline2" position="70,155" zPosition="1" size="1,442" pixmap="Army_MoodBlue_mod/timeline.png" />
+    <widget name="timeline3" position="70,155" zPosition="1" size="1,442" pixmap="Army_MoodBlue_mod/timeline.png" />
+    <widget name="timeline4" position="70,155" zPosition="1" size="1,442" pixmap="Army_MoodBlue_mod/timeline.png" />
+    <widget name="timeline5" position="70,155" zPosition="1" size="1,442" pixmap="Army_MoodBlue_mod/timeline.png" />
+    <widget name="timeline_now" position="70,153" zPosition="2" size="19,446" pixmap="Army_MoodBlue_mod/timeline-now.png" alphatest="on" />
+    <widget source="Event" render="Label" position="885,110" zPosition="1" size="350,80" font="Regular; 26" halign="center" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
       <convert type="EventName">Name</convert>
     </widget>
-    <widget source="Event" render="Progress" pixmap="PLi-Full-HD-Night/infobar/pbar.png" position="520,135" size="710,8" transparent="1" borderWidth="2" borderColor="un33333a">
+    <widget source="Event" render="Label" position="910,185" zPosition="1" size="300,48" font="Regular;22" halign="center" backgroundColor="transpBlack" transparent="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">Format:(%A)</convert>
+    </widget>
+    <widget source="Event" render="Label" position="986,230" zPosition="1" size="80,22" font="Regular;20" halign="center" backgroundColor="transpBlack" transparent="1">
+      <convert type="EventTime">StartTime</convert>
+      <convert type="ClockToText">
+      </convert>
+    </widget>
+    <widget source="Event" render="Label" position="1051,230" zPosition="1" size="80,22" font="Regular;20" halign="center" backgroundColor="transpBlack" transparent="1">&gt;
+		<convert type="EventTime">EndTime</convert><convert type="ClockToText">Format:-%H:%M</convert></widget>
+    <widget source="Event" render="Progress" position="914,270" zPosition="2" pixmap="Army_MoodBlue_mod/chan_p_bar.png" size="300,14" transparent="1">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="Event" render="Label" position="520,145" size="710,185" foregroundColor="grey" backgroundColor="background" transparent="1" font="Regular;20">
-      <convert type="EventName">ExtendedDescription</convert>
+    <widget source="Event" render="Label" position="870,296" zPosition="1" size="400,330" font="Regular;18" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
+      <convert type="EventName">FullDescription</convert>
     </widget>
-    <widget source="Event" render="Label" position="520,335" size="610,20" foregroundColor="un99ff" backgroundColor="background" transparent="1" font="Regular;18" halign="left">
-      <convert type="EventName">Genre</convert>
-    </widget>
-    <widget source="Event" render="Label" position="1030,335" size="200,20" foregroundColor="un99ff" backgroundColor="background" transparent="1" font="Regular;18" halign="right">
-      <convert type="EventName">SmallRating</convert>
-    </widget>
-    <widget source="global.CurrentTime" render="Label" position="1105,30" size="90,34" zPosition="3" font="LCD; 34" valign="center" halign="right" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
+    <ePixmap pixmap="Army_MoodBlue_mod/icons/clock.png" position="706,39" size="14,14" zPosition="1" alphatest="blend" />
+    <widget source="global.CurrentTime" render="Label" position="722,30" size="140,34" zPosition="1" font="LCD;32" valign="center" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1">
       <convert type="ClockToText">Default</convert>
     </widget>
-    <widget source="global.CurrentTime" render="Label" position="1195,30" size="70,24" zPosition="3" font="LCD; 22" valign="top" halign="left" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
+    <widget source="global.CurrentTime" render="Label" position="793,30" size="70,22" zPosition="1" font="LCD;20" valign="top" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1">
       <convert type="ClockToText">Format::%S</convert>
     </widget>
-    <ePixmap pixmap="Army_MoodBlue_mod/icons/clock.png" position="1091,40" size="14,14" zPosition="3" alphatest="blend" />
-    <widget name="timeline_text" position="50,355" size="1180,28" foregroundColor="yellow" backgroundColor="black" transparent="1" />
-    <widget name="list" position="center,379" size="1180,295" itemHeight="45" transparent="1" scrollbarMode="showNever" EntryBackgroundColor="background" EventFontPadding="4" EntryBorderColor="#cccccc" />
-    <widget name="timeline0" pixmap="Army_MoodBlue_mod/timeline.png" position="0,377" size="1,298" zPosition="1" />
-    <widget name="timeline1" pixmap="Army_MoodBlue_mod/timeline.png" position="0,377" size="1,298" zPosition="1" />
-    <widget name="timeline2" pixmap="Army_MoodBlue_mod/timeline.png" position="0,377" size="1,298" zPosition="1" />
-    <widget name="timeline3" pixmap="Army_MoodBlue_mod/timeline.png" position="0,377" size="1,298" zPosition="1" />
-    <widget name="timeline4" pixmap="Army_MoodBlue_mod/timeline.png" position="0,377" size="1,298" zPosition="1" />
-    <widget name="timeline5" pixmap="Army_MoodBlue_mod/timeline.png" position="0,377" size="1,298" zPosition="1" />
-    <widget name="timeline_now" pixmap="Army_MoodBlue_mod/timeline-now.png" position="4,377" size="19,298" zPosition="2" alphatest="on" />
+    <ePixmap position="130,640" size="250,40" pixmap="Army_MoodBlue_mod/buttons/red25.png" alphatest="on" zPosition="1" />
+    <ePixmap position="540,640" size="250,40" pixmap="Army_MoodBlue_mod/buttons/green25.png" alphatest="on" zPosition="1" />
+    <widget name="key_red" position="130,640" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
+    <widget name="key_green" position="540,640" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
   </screen>
   <!-- 110.1 GraphMultiEpgSetup -->
   <screen name="GraphMultiEpgSetup" position="center,center" size="1130,520" title="Electronic Program Guide Setup">
