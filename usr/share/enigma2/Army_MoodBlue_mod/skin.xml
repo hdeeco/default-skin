@@ -239,9 +239,7 @@
   <widget source="session.CurrentService" render="Label" position="373,518" size="530,32" zPosition="2" font="Regular;28" halign="center" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="background">
     <convert type="ServiceName">Name</convert>
   </widget>
-  <widget source="session.CurrentService" render="Label" zPosition="4" position="1234,526" size="48,22" halign="center" font="Regular;16" foregroundColor="white" transparent="1" backgroundColor="un9f2322">
-    <convert type="ServiceInfo">Framerate</convert>
-  </widget>
+  
   <widget source="session.CurrentService" zPosition="4" render="Label" position="866,661" size="410,20" backgroundColor="background" foregroundColor="white" transparent="1" font="Display; 16" halign="center">
     <convert type="PliExtraInfo">CryptoInfo</convert>
   </widget>
@@ -375,12 +373,12 @@
     <convert type="ValueRange">3,3</convert>
     <convert type="ConditionalShowHide" />
   </widget>
-  <eLabel text="snr:" zPosition="3" position="1140,610" size="80,30" halign="left" font="Regular; 26" foregroundColor="grey" backgroundColor="transpBlack" transparent="1" />
-  <widget source="session.FrontendStatus" render="Label" position="1192,610" zPosition="3" size="75,30" halign="left" font="Regular; 26" backgroundColor="transpBlack" transparent="1" valign="center" foregroundColor="grey">
+  <eLabel text="snr:" zPosition="3" position="1140,610" size="80,30" halign="left" font="Regular; 26" foregroundColor="grey" backgroundColor="background" transparent="1" />
+  <widget source="session.FrontendStatus" render="Label" position="1192,610" zPosition="3" size="75,30" halign="left" font="Regular; 26" backgroundColor="background" transparent="1" valign="center" foregroundColor="grey">
     <convert type="FrontendInfo">SNR</convert>
   </widget>
-  <eLabel text="ber:" zPosition="3" position="1140,578" size="75,30" font="Regular; 26" backgroundColor="transpBlack" transparent="1" halign="left" />
-  <widget source="session.FrontendStatus" render="Label" position="1194,578" zPosition="3" size="65,30" font="Regular; 26" foregroundColor="white" backgroundColor="transpBlack" transparent="1">
+  <eLabel text="ber:" zPosition="3" position="1140,578" size="75,30" font="Regular; 26" backgroundColor="background" transparent="1" halign="left" />
+  <widget source="session.FrontendStatus" render="Label" position="1194,578" zPosition="3" size="65,30" font="Regular; 26" foregroundColor="white" backgroundColor="background" transparent="1">
     <convert type="FrontendInfo">BER</convert>
   </widget>
   <eLabel name="back eLabel" position="54,23" size="1170,450" backgroundColor="un30000000" />
