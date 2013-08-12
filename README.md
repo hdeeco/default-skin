@@ -1,4 +1,4 @@
 skin-Pli-Army-Mood-Blue-mod
 ===========================
 
-Modification based on OpenSource skin from Army (skin maker from Blackhole team)
+Modification is based on open-source skin from Army. It is adapted to work on OpenPLi, OpenViX, OpenATV images.
