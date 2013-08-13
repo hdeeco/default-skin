@@ -1,6 +1,6 @@
 <skin>
   <!--
-     ################### Skin_Default_Army_MoodBlueHD_VU_0.1.x_v.1.0_BP ####################
+     ################### Army MoodBlue HD v1.01 ####################
 
                                THIS SKIN IS OPEN SOURCE SOFTWARE.
                      YOU CAN REDISTRIBUTE IT AND/OR MODIFY UNDER THE TERMS OF THE
@@ -8,17 +8,10 @@
                                       SOFTWARE FOUNDATION.
                            DON'T REMOVE THE ORIGINAL CREDITS AS FOLLOW:
                       MooD-Blue-Hd-Vu - Copyright (C) 2012 GPL-III by Army
-					Modded by Taykun345 from OpenPLi forums for OpenPLi 3.0
 
-                                 QUESTA SKIN E' OPEN SOURCE
-                 IL CODICE DELLA SKIN PUO' ESSERE MODIFICATO E REDISTRIBUITO SECONDO
-                 I TERMINI DELLA GNU GENERAL PUBLIC LICENSE VERSION 3 COME PUBBLICATA
-                                DALLA FREE SOFTWARE FOUNDATION.
-                           NON MODIFICATE QUINDI LA RIGA SOTTOSTANTE:
-                       MooD-Blue-Hd-Vu - Copyright (C) 2012 GPL-III by Army
-					   Modified For Open PLi Based Images By Persian Prince
+                      Modded by Taykun345/OldSkulRide from OpenPLi/ViX forums for OpenPLi 3.0/4.0, OpenATV and OpenViX
 
-    ###################  Skin_Default_Army_MoodBlueHD_VU_0.1.x_v.1.0_BP  ####################
+    ###################  Army MoodBlue HD v1.01  ####################
     -->
   <output id="0">
     <resolution xres="1280" yres="720" bpp="32" />
@@ -822,19 +815,19 @@
       <convert type="ServicePosition">Remaining</convert>
     </widget>
   </screen>
-  <screen name="RecordTimerQuestion" position="290,240" size="700,250">
-    <ePixmap pixmap="Army_MoodBlue_mod/frame_box-fs8.png" zPosition="-1" position="0,0" size="700,250" alphatest="on" />
-    <widget name="text" position="0,0" size="0,0" font="Regular;20" />
-    <widget name="list" position="11,8" size="680,232" transparent="1" selectionPixmap="Army_MoodBlue_mod/icons/listselection450x38_S-fs8.png" itemHeight="25" />
-  </screen>
-  <screen name="RemoveTimerQuestion" position="center,center" size="700,250">
-    <ePixmap pixmap="Army_MoodBlue_mod/frame_box-fs8.png" zPosition="-1" position="0,0" size="700,250" alphatest="on" />
-    <widget name="text" position="0,0" size="0,0" font="Regular;20" />
-    <widget name="list" position="11,8" size="680,232" transparent="1" selectionPixmap="Army_MoodBlue_mod/icons/listselection450x38_S-fs8.png" itemHeight="25" />
-    <applet type="onLayoutFinish">
+  <screen name="RecordTimerQuestion" position="center,center" size="650,270" zPosition="5" title="Timer">
+  <ePixmap pixmap="Army_MoodBlue_mod/frame_box-fs8.png" zPosition="-1" position="0,0" size="650,270" alphatest="on" />
+  <widget name="text" position="0,0" size="0,0" font="Regular;20" />
+  <widget name="list" position="11,8" size="627,255" transparent="1" itemHeight="25" />
+</screen>
+  <screen name="RemoveTimerQuestion" position="center,center" size="650,270" zPosition="5" title="Remove Timer">
+  <ePixmap pixmap="Army_MoodBlue_mod/frame_box-fs8.png" zPosition="-1" position="0,0" size="650,270" alphatest="on" />
+  <widget name="text" position="0,0" size="0,0" font="Regular;20" />
+  <widget name="list" position="11,8" size="630,249" transparent="1" itemHeight="25" />
+  <applet type="onLayoutFinish">
 self.autoResize()
 		</applet>
-  </screen>
+</screen>
   <screen name="About" position="0,0" size="1280,720" title="About" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="81,100" size="120,34" alphatest="blend" zPosition="2" />
     <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
@@ -1492,7 +1485,8 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     <widget name="timeline_text" position="56,280" size="1174,25" selectionDisabled="1" backgroundColor="un11362d" transparent="1" foregroundColor="un99ff" />
     <eLabel position="56,310" size="1174,2" backgroundColor="background" />
     <widget name="list" position="56,321" size="1175,325" EntryBorderColor="white" EntryBackgroundColor="black" EntryBackgroundColorSelected="grey" scrollbarMode="showOnDemand" transparent="1" />
-    <widget name="timeline_now" position="0,330" zPosition="2" size="10,325" pixmap="Army_MoodBlue_mod/timeline-now.png" transparent="1" alphatest="blend" />
+    <widget name="bouquetlist" position="56,321" size="1175,325" EntryBorderColor="white" EntryBackgroundColor="black" EntryBackgroundColorSelected="grey" scrollbarMode="showOnDemand" transparent="1" zPosition="1" />
+    <widget name="timeline_now" position="0,321" zPosition="2" size="10,325" pixmap="Army_MoodBlue_mod/timeline-now.png" transparent="1" alphatest="blend" />
   </screen>
   <screen name="GraphMultiEpgSetup" position="center,center" size="1130,520" title="Electronic Program Guide Setup">
     <ePixmap pixmap="Army_MoodBlue_mod/frame_box-fs8.png" zPosition="-1" position="0,0" size="1130,520" alphatest="on" />
@@ -1545,7 +1539,8 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     <widget name="timeline_text" position="56,280" size="1174,25" selectionDisabled="1" backgroundColor="un11362d" transparent="1" foregroundColor="un99ff" />
     <eLabel position="56,310" size="1174,2" backgroundColor="background" />
     <widget name="list" position="56,321" size="1175,325" EntryBorderColor="white" EntryBackgroundColor="black" EntryBackgroundColorSelected="grey" scrollbarMode="showOnDemand" transparent="1" />
-    <widget name="timeline_now" position="0,330" zPosition="2" size="10,325" pixmap="Army_MoodBlue_mod/timeline-now.png" transparent="1" alphatest="blend" />
+    <widget name="bouquetlist" position="56,321" size="1175,325" EntryBorderColor="white" EntryBackgroundColor="black" EntryBackgroundColorSelected="grey" scrollbarMode="showOnDemand" transparent="1" zPosition="1" />
+    <widget name="timeline_now" position="0,321" zPosition="2" size="10,325" pixmap="Army_MoodBlue_mod/timeline-now.png" transparent="1" alphatest="blend" />
   </screen>
   <screen name="GraphicalEPGPIG" position="0,0" size="1280,720" title="Electronic Program Guide" flags="wfNoBorder" backgroundColor="transparent">
     <ePixmap pixmap="Army_MoodBlue_mod/frame_base-fs8.png" position="center,center" zPosition="-3" size="1280,720" alphatest="on" transparent="1" />
@@ -1580,7 +1575,8 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     <widget name="timeline_text" position="center,280" size="1200,25" selectionDisabled="1" backgroundColor="un11362d" transparent="1" foregroundColor="un99ff" />
     <eLabel position="40,311" size="1201,1" backgroundColor="background" />
     <widget name="list" position="center,320" size="1201,325" backgroundColor="black" EntryForegroundColorSelected="black" EntryForegroundColorNowSelected="black" RecordForegroundColorSelected="black" ZapForegroundColorSelected="black" scrollbarMode="showNever" transparent="1" />
-    <widget name="timeline_now" position="0,330" zPosition="2" size="10,325" pixmap="Army_MoodBlue_mod/timeline-now.png" transparent="1" alphatest="blend" />
+    <widget name="bouquetlist" position="center,320" size="1201,325" EntryBorderColor="white" EntryBackgroundColor="black" EntryBackgroundColorSelected="grey" scrollbarMode="showOnDemand" transparent="1" zPosition="1" />
+    <widget name="timeline_now" position="0,320" zPosition="2" size="10,325" pixmap="Army_MoodBlue_mod/timeline-now.png" transparent="1" alphatest="blend" />
     <ePixmap position="56,660" size="250,40" pixmap="Army_MoodBlue_mod/buttons/red25.png" alphatest="on" zPosition="1" />
     <ePixmap position="362,660" size="250,40" pixmap="Army_MoodBlue_mod/buttons/green25.png" alphatest="on" zPosition="1" />
     <ePixmap position="668,660" size="250,40" pixmap="Army_MoodBlue_mod/buttons/yellow25.png" alphatest="on" zPosition="1" />
@@ -1838,7 +1834,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
   <screen name="NimSelection" position="center,center" size="900,560" title="Choose Tuner" backgroundColor="black">
     <ePixmap pixmap="Army_MoodBlue_mod/frame_box-fs8.png" zPosition="-1" position="0,0" size="900,560" alphatest="on" />
     <widget source="nimlist" render="Listbox" position="20,20" size="860,523" transparent="1" selectionPixmap="Army_MoodBlue_mod/icons/listselection860x120-fs8.png">
-  <convert type="TemplatedMultiContent">
+      <convert type="TemplatedMultiContent">
 				{"template": [
 						MultiContentEntryText(pos = (10, 5), size = (860, 50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the nim name,
 						MultiContentEntryText(pos = (50, 37), size = (820, 50), font = 1, flags = RT_HALIGN_LEFT, text = 2), # index 2 is a description of the nim settings,
@@ -1847,7 +1843,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
 				 "itemHeight": 112
 				}
 			</convert>
-</widget>
+    </widget>
   </screen>
   <screen name="NimSetup" position="center,center" size="800,460" title="Reception Settings">
     <ePixmap pixmap="Army_MoodBlue_mod/frame_box-fs8.png" zPosition="-1" position="0,0" size="800,460" alphatest="on" />
