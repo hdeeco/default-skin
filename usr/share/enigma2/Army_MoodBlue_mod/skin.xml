@@ -1,6 +1,6 @@
 <skin>
   <!--
-     ################### Army MoodBlue HD v1.01 ####################
+     ################### Army MoodBlue HD v1.02 ####################
 
                                THIS SKIN IS OPEN SOURCE SOFTWARE.
                      YOU CAN REDISTRIBUTE IT AND/OR MODIFY UNDER THE TERMS OF THE
@@ -11,7 +11,7 @@
 
                       Modded by Taykun345/OldSkulRide from OpenPLi/ViX forums for OpenPLi 3.0/4.0, OpenATV and OpenViX
 
-    ###################  Army MoodBlue HD v1.01  ####################
+    ###################  Army MoodBlue HD v1.02  ####################
     -->
   <output id="0">
     <resolution xres="1280" yres="720" bpp="32" />
@@ -816,18 +816,18 @@
     </widget>
   </screen>
   <screen name="RecordTimerQuestion" position="center,center" size="650,270" zPosition="5" title="Timer">
-  <ePixmap pixmap="Army_MoodBlue_mod/frame_box-fs8.png" zPosition="-1" position="0,0" size="650,270" alphatest="on" />
-  <widget name="text" position="0,0" size="0,0" font="Regular;20" />
-  <widget name="list" position="11,8" size="627,255" transparent="1" itemHeight="25" />
-</screen>
+    <ePixmap pixmap="Army_MoodBlue_mod/frame_box-fs8.png" zPosition="-1" position="0,0" size="650,270" alphatest="on" />
+    <widget name="text" position="0,0" size="0,0" font="Regular;20" />
+    <widget name="list" position="11,8" size="627,255" transparent="1" itemHeight="25" />
+  </screen>
   <screen name="RemoveTimerQuestion" position="center,center" size="650,270" zPosition="5" title="Remove Timer">
-  <ePixmap pixmap="Army_MoodBlue_mod/frame_box-fs8.png" zPosition="-1" position="0,0" size="650,270" alphatest="on" />
-  <widget name="text" position="0,0" size="0,0" font="Regular;20" />
-  <widget name="list" position="11,8" size="630,249" transparent="1" itemHeight="25" />
-  <applet type="onLayoutFinish">
+    <ePixmap pixmap="Army_MoodBlue_mod/frame_box-fs8.png" zPosition="-1" position="0,0" size="650,270" alphatest="on" />
+    <widget name="text" position="0,0" size="0,0" font="Regular;20" />
+    <widget name="list" position="11,8" size="630,249" transparent="1" itemHeight="25" />
+    <applet type="onLayoutFinish">
 self.autoResize()
 		</applet>
-</screen>
+  </screen>
   <screen name="About" position="0,0" size="1280,720" title="About" backgroundColor="transparent" flags="wfNoBorder">
     <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="81,100" size="120,34" alphatest="blend" zPosition="2" />
     <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
@@ -1093,19 +1093,19 @@ self.autoResize()
     <widget name="menu" position="8,12" size="484,409" scrollbarMode="showOnDemand" transparent="1" selectionPixmap="Army_MoodBlue_mod/icons/listselection450x38_S-fs8.png" itemHeight="25" />
   </screen>
   <screen name="ChannelSelectionPig" position="0,0" size="1280,720" title="Channel Selection" flags="wfNoBorder">
-    <ePixmap position="1,1" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod2/frame_base-fs8.png" />
-    <ePixmap position="864,425" zPosition="2" size="250,4" pixmap="Army_MoodBlue_mod2/chan_p1_bar.png" alphatest="on" />
-    <ePixmap position="717,78" zPosition="1" size="533,300" pixmap="Army_MoodBlue_mod2/tv2_1-fs8.png" alphatest="on" />
-    <ePixmap position="20,24" zPosition="1" size="60,49" pixmap="Army_MoodBlue_mod2/menu/logo_hd.png" alphatest="blend" transparent="1" />
+    <ePixmap position="1,1" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
+    <ePixmap position="864,425" zPosition="2" size="250,4" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
+    <ePixmap position="717,78" zPosition="1" size="533,300" pixmap="Army_MoodBlue_mod/tv2_1-fs8.png" alphatest="on" />
+    <ePixmap position="20,24" zPosition="1" size="60,49" pixmap="Army_MoodBlue_mod/menu/logo_hd.png" alphatest="blend" transparent="1" />
     <widget source="session.CurrentService" render="Label" position="210,35" size="417,32" zPosition="2" font="Regular; 25" halign="center" transparent="1" foregroundColor="un99ff" backgroundColor="transpBlack">
       <convert type="ServiceName">Name</convert>
     </widget>
     <widget source="session.VideoPicture" render="Pig" position="721,82" size="524,291" zPosition="1" backgroundColor="transparent2" />
-    <widget name="list" position="20,80" size="680,565" scrollbarMode="showOnDemand" foregroundColorServiceNotAvail="#666666" serviceItemHeight="32" serviceNumberFont="Regular;25" serviceNameFont="Regular;25" serviceInfoFont="Regular;25" colorServiceDescription="yellow" picServiceEventProgressbar="Army_MoodBlue_mod2/pl.png" selectionPixmap="Army_MoodBlue_mod2/icons/listselection700x32-fs8.png" transparent="1" itemHeight="20" />
-    <ePixmap position="51,660" size="250,40" pixmap="Army_MoodBlue_mod2/buttons/red25.png" alphatest="on" zPosition="2" />
-    <ePixmap position="362,660" size="250,40" pixmap="Army_MoodBlue_mod2/buttons/green25.png" alphatest="on" zPosition="2" />
-    <ePixmap position="668,660" size="250,40" pixmap="Army_MoodBlue_mod2/buttons/yellow25.png" alphatest="on" zPosition="2" />
-    <ePixmap position="974,660" size="250,40" pixmap="Army_MoodBlue_mod2/buttons/blue25.png" alphatest="on" zPosition="2" />
+    <widget name="list" position="20,80" size="680,565" scrollbarMode="showOnDemand" foregroundColorServiceNotAvail="#666666" serviceItemHeight="32" serviceNumberFont="Regular;25" serviceNameFont="Regular;25" serviceInfoFont="Regular;25" colorServiceDescription="yellow" picServiceEventProgressbar="Army_MoodBlue_mod/pl.png" selectionPixmap="Army_MoodBlue_mod/icons/listselection700x32-fs8.png" transparent="1" itemHeight="20" />
+    <ePixmap position="51,660" size="250,40" pixmap="Army_MoodBlue_mod/buttons/red25.png" alphatest="on" zPosition="2" />
+    <ePixmap position="362,660" size="250,40" pixmap="Army_MoodBlue_mod/buttons/green25.png" alphatest="on" zPosition="2" />
+    <ePixmap position="668,660" size="250,40" pixmap="Army_MoodBlue_mod/buttons/yellow25.png" alphatest="on" zPosition="2" />
+    <ePixmap position="974,660" size="250,40" pixmap="Army_MoodBlue_mod/buttons/blue25.png" alphatest="on" zPosition="2" />
     <widget position="50,660" size="250,36" name="key_red" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="3" />
     <widget position="362,660" size="250,36" name="key_green" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="3" />
     <widget position="668,660" size="250,36" name="key_yellow" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="3" />
@@ -1125,7 +1125,7 @@ self.autoResize()
       <convert type="EventTime">EndTime</convert>
       <convert type="ClockToText">Format:%H:%M</convert>
     </widget>
-    <widget source="ServiceEvent" render="Progress" position="834,414" zPosition="3" pixmap="Army_MoodBlue_mod2/chan_p_bar.png" size="300,14" transparent="1">
+    <widget source="ServiceEvent" render="Progress" position="834,414" zPosition="3" pixmap="Army_MoodBlue_mod/chan_p_bar.png" size="300,14" transparent="1">
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget source="ServiceEvent" render="Label" position="716,438" zPosition="1" size="545,195" font="Regular; 20" foregroundColor="white" transparent="1">
@@ -1429,7 +1429,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     <widget name="config" position="20,20" size="670,150" transparent="1" />
   </screen>
   <screen name="EventView" position="center,center" size="1130,520" title="Eventview">
-    <widget name="channel" position="25,20" size="400,28" font="Regular;25" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
+ <widget name="channel" position="25,20" size="400,28" font="Regular;25" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
     <widget name="datetime" position="360,20" size="400,28" font="Regular;24" halign="center" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
     <widget name="duration" position="700,20" size="404,28" font="Regular;24" halign="right" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
     <widget name="epg_description" position="26,70" size="1078,373" font="Regular;25" backgroundColor="transpBlack" transparent="1" />
@@ -1441,6 +1441,25 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     <widget name="key_green" position="302,461" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
     <widget name="key_yellow" position="578,461" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
     <widget name="key_blue" position="854,461" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
+</screen>
+  <screen name="EventViewSimple" position="center,center" size="1280,720" title="Eventview" flags="wfNoBorder" backgroundColor="transparent">
+ <ePixmap position="center,444" zPosition="1" size="939,249" pixmap="Army_MoodBlue_mod/r939x249.png" />
+       <widget source="Service" render="Label" position="333,457" size="760,35" font="RegularAA; 22" halign="left" backgroundColor="transpBlack" transparent="1" valign="center" zPosition="2" foregroundColor="un99ff">
+      <convert type="MovieInfo">RecordServiceName</convert>
+    </widget>
+<widget source="Service" render="Label" position="183,496" size="910,171" font="Regular; 20" zPosition="2" backgroundColor="transpBlack" foregroundColor="white" transparent="1">
+      <convert type="EventName">FullDescription</convert>
+    </widget>
+    <widget name="duration" position="183,457" size="150,35" font="RegularAA; 22" halign="left" valign="center" backgroundColor="background" transparent="1" zPosition="2" foregroundColor="uncccccc" />
+  </screen>
+<screen name="InfoBarEventView" position="center,center" size="1280,720" title="Eventview" flags="wfNoBorder" backgroundColor="transparent">
+ <ePixmap position="center,444" zPosition="1" size="939,249" pixmap="Army_MoodBlue_mod/r939x249.png" />
+<widget source="Service" render="Label" position="333,457" size="760,35" font="RegularAA; 22" halign="left" backgroundColor="transpBlack" transparent="1" valign="center" zPosition="2" foregroundColor="un99ff">
+      <convert type="MovieInfo">RecordServiceName</convert>
+    </widget>
+<widget source="Service" render="Label" position="183,496" size="910,171" font="Regular; 20" zPosition="2" backgroundColor="transpBlack" foregroundColor="white" transparent="1">
+      <convert type="EventName">FullDescription</convert>
+    </widget>    <widget name="duration" position="183,457" size="150,35" font="RegularAA; 22" halign="left" valign="center" backgroundColor="background" transparent="1" zPosition="2" foregroundColor="uncccccc" />
   </screen>
   <screen name="EventViewContextMenu" position="center,center" size="400,340" title="EventView Context Menu">
     <ePixmap pixmap="Army_MoodBlue_mod/frame_box-fs8.png" zPosition="-1" position="0,0" size="400,340" alphatest="on" />
