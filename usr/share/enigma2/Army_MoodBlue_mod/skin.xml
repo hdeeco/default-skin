@@ -395,7 +395,7 @@
   </screen>
    <screen name="Menu" position="0,0" size="1280,720" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
     <widget source="Title" render="Label" position="80,30" size="500,34" font="RegularAA;28" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1" />
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="center,center" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="1" size="250,160" pixmap="Army_MoodBlue_mod/menu/information.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -422,7 +422,7 @@
   </screen>
   <screen name="menu_mainmenu" position="0,0" size="1280,720" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
     <widget source="title" render="Label" position="80,30" size="500,34" font="RegularAA;28" halign="left" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" zPosition="0" />
+    
     <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
     <ePixmap position="832,81" zPosition="-1" size="378,216" pixmap="Army_MoodBlue_mod/tv_2-fs8.png" alphatest="on" />
@@ -483,7 +483,7 @@
     </widget>
   </screen>
   <screen name="menu_information" position="0,0" size="1280,720" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="center,center" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/information.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -510,7 +510,7 @@
     </widget>
   </screen>
   <screen name="menu_setup" position="0,0" size="1280,720" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/setup.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -537,7 +537,7 @@
     </widget>
   </screen>
   <screen name="menu_scan" position="0,0" size="1280,720" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/scan.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -564,7 +564,7 @@
     </widget>
   </screen>
   <screen name="menu_system" position="0,0" size="1280,720" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/system.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -591,7 +591,7 @@
     </widget>
   </screen>
   <screen name="menu_harddisk" position="0,0" size="1280,720" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/hdd.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -618,7 +618,7 @@
     </widget>
   </screen>
   <screen name="menu_shutdown" position="0,0" size="1280,720" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/shutdown.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -645,7 +645,7 @@
     </widget>
   </screen>
   <screen name="menu_timemenu" position="0,0" size="1280,720" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/setup.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -672,7 +672,7 @@
     </widget>
   </screen>
   <screen name="menu_extended" position="0,0" size="1280,720" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/setup.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -699,7 +699,7 @@
     </widget>
   </screen>
   <screen name="menu_osd_menu" position="0,0" size="1280,720" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/setup.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -726,7 +726,7 @@
     </widget>
   </screen>
   <screen name="menu_network" position="0,0" size="1280,720" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/setup.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -753,7 +753,7 @@
     </widget>
   </screen>
   <screen name="menu_epg" position="0,0" size="1280,720" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/setup.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -780,7 +780,7 @@
     </widget>
   </screen>
   <screen name="menu_epgloadsave_menu" position="0,0" size="1280,720" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/setup.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -829,7 +829,7 @@ self.autoResize()
 		</applet>
   </screen>
   <screen name="About" position="0,0" size="1280,720" title="About" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="81,100" size="120,34" alphatest="blend" zPosition="2" />
+    
     <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="58,81" zPosition="2" size="760,550" pixmap="Army_MoodBlue_mod/r760x550.png" alphatest="blend" transparent="1" />
     <widget source="Title" render="Label" position="80,30" size="420,34" font="RegularAA;28" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1" />
@@ -1365,7 +1365,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     <widget name="key_blue" position="972,640" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
   </screen>
   <screen name="EPGSelectionSetup" position="0,0" size="1280,720" title="Program Guide Setup" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="center,center" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/information.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -1673,7 +1673,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     </widget>
   </screen>
   <screen name="LanguageSelection" position="0,0" size="1280,720" title="Language selection" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="center,center" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/information.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -1952,7 +1952,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="input" position="10,184" size="553,40" font="Regular; 30" halign="center" backgroundColor="background" transparent="1" />
   </screen>
   <screen name="PluginBrowser" position="0,0" size="1280,720" title="Plugin browser" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="960,470" zPosition="1" size="250,160" pixmap="Army_MoodBlue_mod/menu/plugins.png" alphatest="on" />
     <ePixmap position="center,center" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -2166,7 +2166,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="servicelist" position="20,175" size="560,284" selectionDisabled="1" />
   </screen>
   <screen name="Setup" position="0,0" size="1280,720" title="Setup" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1077,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="center,center" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="center,80" zPosition="2" size="1120,460" pixmap="Army_MoodBlue_mod/r1120x460.png" alphatest="blend" transparent="1" />
     <widget source="Title" render="Label" position="104,30" size="600,34" font="RegularAA;28" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1" />
@@ -3756,7 +3756,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     </widget>
   </screen>
   <screen name="Infopanel" position="0,0" size="1280,720" title="Info Panel" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="center,center" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/information.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -3776,7 +3776,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     </widget>
   </screen>
   <screen name="AboutOE" position="0,0" size="1280,720" title="About" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="center,center" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/information.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -3802,7 +3802,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="AboutScrollLabel" position="70,253" size="369,352" font="Regular;20" transparent="1" zPosition="3" scrollbarMode="showOnDemand" />
   </screen>
   <screen name="Devices" position="0,0" size="1280,720" title="SystemInfo" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="center,center" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/information.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -3827,7 +3827,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="mounts" render="Label" position="70,471" size="458,143" font="Regular;18" transparent="1" zPosition="1" enableWrapAround="0" />
   </screen>
   <screen name="SystemMemoryInfo" position="0,0" size="1280,720" title="SystemInfo" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="center,center" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/information.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -3849,7 +3849,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="AboutScrollLabel" position="70,214" size="458,376" font="Regular;20" transparent="1" zPosition="1" scrollbarMode="showOnDemand" />
   </screen>
   <screen name="SystemNetworkInfo" position="0,0" size="1280,720" title="SystemInfo" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="center,center" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/information.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -3885,7 +3885,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="statuspic" pixmaps="skin_default/buttons/button_green.png,skin_default/buttons/button_green_off.png" position="190,564" zPosition="10" size="15,16" transparent="1" alphatest="on" />
   </screen>
   <screen name="SoftwarePanel" position="0,0" size="1280,720" title="Software Panel" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="center,center" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
     <ePixmap position="58,81" zPosition="2" size="760,550" pixmap="Army_MoodBlue_mod/r760x550.png" alphatest="blend" transparent="1" />
@@ -3926,7 +3926,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget position="362,660" size="250,36" name="key_green" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="3" />
   </screen>
   <screen name="RedPanel" position="0,0" size="1280,720" title="RedPanel" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="center,center" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/information.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -3950,7 +3950,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="config" position="70,120" size="700,450" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background20" transparent="1" />
   </screen>
   <screen name="YellowPanel" position="0,0" size="1280,720" title="Yellow Key Action" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="center,center" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/information.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -3974,7 +3974,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="config" position="70,120" size="700,450" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background20" transparent="1" />
   </screen>
   <screen name="ScriptRunner" position="0,0" size="1280,720" title="Script Runner" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="center,center" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/script.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -4002,7 +4002,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="key_green" position="362,650" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
   </screen>
   <screen name="HddMount" position="0,0" size="1280,720" title="HddMount" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="center,center" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/information.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -4042,7 +4042,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget position="974,660" size="250,36" name="key_blue" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="3" />
   </screen>
   <screen name="ShowSoftcamPanelExtensions" position="0,0" size="1280,720" title="Softcam-Panel Setup" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="center,center" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/information.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -4066,7 +4066,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="config" position="70,120" size="700,450" itemHeight="30" scrollbarMode="showOnDemand" enableWrapAround="1" backgroundColor="background20" transparent="1" />
   </screen>
   <screen name="SoftcamPanel" position="0,0" size="1280,720" title="Softcam Manager" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="center,center" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/information.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -4098,7 +4098,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget position="974,660" size="250,36" name="key_blue" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="3" />
   </screen>
   <screen name="KeymapSel" position="0,0" size="1280,720" title="Keymap Selection" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="center,center" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/information.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -4136,7 +4136,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="key_green" render="Label" position="309,535" size="250,40" zPosition="1" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
   </screen>
   <screen name="VIXSetup" position="0,0" size="1280,720" title="Settings" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="center,center" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/information.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -4284,7 +4284,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="list" position="18,8" size="663,480" font="Regular;14" foregroundColor="white" backgroundColor="transpBlack" transparent="1" selectionPixmap="Army_MoodBlue_mod/icons/listselection450x38_S-fs8.png" itemHeight="25" />
   </screen>
   <screen name="VIXCronManager" position="0,0" size="1280,720" title="Cron Manager" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="center,center" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/information.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -4320,7 +4320,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget position="974,660" size="250,36" name="key_blue" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="3" />
   </screen>
   <screen name="VIXCronTimers" position="0,0" size="1280,720" title="Cron Manager" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="center,center" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/information.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -4415,7 +4415,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="list" position="23,53" size="553,397" selectionPixmap="Army_MoodBlue_mod/icons/listselection450x38_S-fs8.png" itemHeight="25" foregroundColor="white" backgroundColor="transpBlack" transparent="1" scrollbarMode="showOnDemand" />
   </screen>
   <screen name="AboutVIX" position="0,0" size="1280,720" title="About" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="center,center" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/information.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
@@ -4441,7 +4441,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="AboutScrollLabel" position="70,253" size="369,352" font="Regular;20" transparent="1" zPosition="3" scrollbarMode="showOnDemand" />
   </screen>
   <screen name="VIXMenu" position="0,0" size="1280,720" title="ViX" backgroundColor="transparent" flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/1_logo.png" position="1087,23" size="120,34" alphatest="on" />
+    
     <ePixmap position="center,center" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
     <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/information.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
