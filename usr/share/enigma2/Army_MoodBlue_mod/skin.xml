@@ -1236,72 +1236,145 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     <widget name="theClock" position="20,70" size="300,50" />
     <widget name="title" position="20,130" size="300,50" />
   </screen>
-  <screen name="DefaultSatLists" position="center,center" size="600,460" title="Default services lists">
-    <ePixmap pixmap="Army_MoodBlue_mod/frame_box-fs8.png" zPosition="-1" position="0,0" size="600,460" alphatest="on" />
-    <widget name="wizard" pixmap="Army_MoodBlue_mod/wizard.png" position="60,20" zPosition="10" size="140,188" transparent="1" alphatest="on" />
-    <widget name="text" position="260,50" size="340,270" font="Regular;23" transparent="1" />
-    <ePixmap pixmap="Army_MoodBlue_mod/buttons/button_red.png" position="80,223" size="15,16" alphatest="on" />
-    <widget name="languagetext" position="110,220" size="120,30" font="Regular;20" />
-    <widget source="list" render="Listbox" position="20,300" size="560,200" scrollbarMode="showOnDemand">
-      <convert type="StringList" />
+  <!-- Wizzard's -->
+  <screen name="StartWizard" position="0,0" size="1280,720"  title="Welcome..." flags="wfNoBorder" >
+    <eLabel text="Start Wizard" position="80,30" size="800,44" font="RegularAA;40" halign="left" foregroundColor="#58bcff" backgroundColor="transpBlack" transparent="1"/>    
+    <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png"  />
+    <ePixmap position="80,620" zPosition="3" size="60,40" pixmap="Army_MoodBlue_mod/button_ok.png" alphatest="blend" transparent="1" />
+    <widget name="wizard" pixmap="Army_MoodBlue_mod/wizard.png" position="830,120" zPosition="10" size="140,188" transparent="1" alphatest="on"/>
+    <widget name="text" position="80,150" size="690,240" font="Regular;22" foregroundColor="#58bcff" backgroundColor="transpBlack" transparent="1"/>
+    <ePixmap pixmap="Army_MoodBlue_mod/buttons/button_red.png" position="320,114" size="15,16" alphatest="on" />
+    <widget name="languagetext" position="350,108" size="180,30" font="Regular;20" foregroundColor="grey" backgroundColor="transpBlack" transparent="1"/>
+    <widget source="list" render="Listbox"	position="80,400" size="690,200" scrollbarMode="showOnDemand"  selectionPixmap="Army_MoodBlue_mod/icons/listselection710x30-fs8.png" transparent="1" >
+	    <convert type="StringList" />
     </widget>
-    <widget name="config" zPosition="1" position="20,300" size="560,200" scrollbarMode="showOnDemand" />
-    <widget name="rc" pixmap="Army_MoodBlue_mod/rc.png" position="600,502" zPosition="10" size="154,500" transparent="1" alphatest="on" />
-    <widget name="arrowdown" pixmap="Army_MoodBlue_mod/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on" />
-    <widget name="arrowup" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on" />
-    <widget name="arrowup2" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on" />
+    <widget name="config"  position="80,400" size="690,200" scrollbarMode="showOnDemand" transparent="1" />  
+    <widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="990,90" zPosition="10" size="154,500" alphatest="on" />
+    <widget name="arrowdown" pixmap="Army_MoodBlue_mod/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
+    <widget name="arrowdown2" pixmap="Army_MoodBlue_mod/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
+    <widget name="arrowup" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
+    <widget name="arrowup2" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />    
   </screen>
-  <screen name="DefaultWizard" position="340,134" size="600,500" title="Welcome...">
-    <ePixmap pixmap="Army_MoodBlue_mod/frame_box-fs8.png" zPosition="-1" position="0,0" size="600,500" alphatest="on" />
-    <widget name="wizard" pixmap="Army_MoodBlue_mod/wizard.png" position="60,20" zPosition="10" size="140,188" transparent="1" alphatest="on" />
-    <widget name="text" position="230,50" size="340,270" font="Regular;23" transparent="1" />
-    <ePixmap pixmap="Army_MoodBlue_mod/buttons/button_red.png" position="80,223" size="15,16" alphatest="on" />
-    <widget name="languagetext" position="110,220" size="120,30" font="Regular;20" />
-    <widget source="list" render="Listbox" position="20,300" size="560,200" scrollbarMode="showOnDemand">
-      <convert type="StringList" />
+  <screen name="NetworkWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" >
+    <eLabel text="Network Wizard" position="80,30" size="800,44" font="RegularAA;40" halign="left" foregroundColor="#58bcff" backgroundColor="transpBlack" transparent="1"/>    
+    
+    <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png"  />
+    <ePixmap position="80,620" zPosition="3" size="60,40" pixmap="Army_MoodBlue_mod/button_ok.png" alphatest="blend" transparent="1" />
+    <ePixmap position="160,623" zPosition="3" size="120,40" pixmap="Army_MoodBlue_mod/buttons/key_txt.png" alphatest="blend" transparent="1" />
+    <widget name="wizard" pixmap="Army_MoodBlue_mod/wizard.png" position="830,120" zPosition="10" size="140,188" transparent="1" alphatest="on"/>
+    <widget name="text" position="80,150" size="690,240" font="Regular;22" foregroundColor="#58bcff" backgroundColor="transpBlack" transparent="1"/>
+    <ePixmap pixmap="Army_MoodBlue_mod/buttons/button_red.png" position="320,114" size="15,16" alphatest="on" />
+    <widget name="languagetext" position="350,108" size="180,30" font="Regular;20" foregroundColor="grey" backgroundColor="transpBlack" transparent="1"/>
+    <widget source="list" render="Listbox"	position="80,400" size="690,200" scrollbarMode="showOnDemand"  selectionPixmap="Army_MoodBlue_mod/icons/listselection710x30-fs8.png" transparent="1" >
+	    <convert type="StringList" />
     </widget>
-    <widget name="config" zPosition="1" position="20,300" size="560,200" scrollbarMode="showOnDemand" />
-    <widget name="rc" pixmap="Army_MoodBlue_mod/rc.png" position="600,502" zPosition="10" size="154,500" transparent="1" alphatest="on" />
-    <widget name="arrowdown" pixmap="Army_MoodBlue_mod/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on" />
-    <widget name="arrowup" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on" />
-    <widget name="arrowup2" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on" />
+    <widget name="config"  position="80,400" size="690,200" scrollbarMode="showOnDemand"   transparent="1" />
+    <widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="990,90" zPosition="10" size="154,500" alphatest="on" />
+    <widget name="arrowdown" pixmap="Army_MoodBlue_mod/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
+    <widget name="arrowdown2" pixmap="Army_MoodBlue_mod/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
+    <widget name="arrowup" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
+    <widget name="arrowup2" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />    
+  </screen>
+  <screen name="LanguageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
+     <eLabel text="Language Wizard" position="80,30" size="800,44" font="RegularAA;40" halign="left" foregroundColor="#58bcff" backgroundColor="transpBlack" transparent="1"/>    
+   
+    <ePixmap pixmap="Army_MoodBlue_mod/frame_base-fs8.png" zPosition="-1" position="0,0" size="1280,720" alphatest="on" />	
+    <ePixmap position="80,620" zPosition="3" size="60,40" pixmap="Army_MoodBlue_mod/button_ok.png" alphatest="blend" transparent="1" />
+    <widget name="wizard" pixmap="Army_MoodBlue_mod/wizard.png" position="830,120" zPosition="10" size="140,188" transparent="1" alphatest="on"/>
+    <widget name="text" position="80,150" size="690,240" font="Regular;22" foregroundColor="#58bcff" backgroundColor="transpBlack" transparent="1"/>
+    <ePixmap position="764,355" zPosition="2" size="26,205" pixmap="Army_MoodBlue_mod/scroll/scroll.png" alphatest="blend" transparent="1" />
+    <widget source="languages" render="Listbox" position="80,360" size="710,200" scrollbarMode="showOnDemand" selectionPixmap="Army_MoodBlue_mod/icons/listselection710x50-fs8.png" transparent="1" >
+	    <convert type="TemplatedMultiContent">
+		    {"template": [
+				    MultiContentEntryText(pos = (80, 10), size = (200, 50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
+				    MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2), # index 2 is the pixmap
+			    ],
+		      "fonts": [gFont("Regular", 20)],
+		      "itemHeight": 50
+		    }
+	    </convert>
+    </widget>
+    <widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="990,90" zPosition="10" size="154,500" alphatest="on" />
+    <widget name="arrowdown" pixmap="Army_MoodBlue_mod/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
+    <widget name="arrowdown2" pixmap="Army_MoodBlue_mod/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
+    <widget name="arrowup" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
+    <widget name="arrowup2" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />    
   </screen>
   <screen name="ImageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/frame_base-fs8.png" zPosition="-1" position="0,0" size="1280,720" alphatest="on" />
+    <eLabel text="Image Wizard" position="80,30" size="800,44" font="RegularAA;40" halign="left" foregroundColor="#58bcff" backgroundColor="transpBlack" transparent="1"/>    
+    
+    <ePixmap pixmap="Army_MoodBlue_mod/frame_base-fs8.png" zPosition="-1" position="0,0" size="1280,720" alphatest="on" />	
     <widget name="text" position="453,110" size="340,330" font="Regular;22" transparent="1" />
-    <widget source="list" render="Listbox" position="323,410" size="490,180" scrollbarMode="showOnDemand">
-      <convert type="StringList" />
+    <widget source="list" render="Listbox" position="323,410" size="490,180" scrollbarMode="showOnDemand" >
+		<convert type="StringList" />
     </widget>
     <widget name="config" position="333,410" zPosition="1" size="440,180" transparent="1" scrollbarMode="showOnDemand" />
     <ePixmap pixmap="Army_MoodBlue_mod/buttons/button_red.png" position="240,320" zPosition="0" size="15,16" transparent="1" alphatest="on" />
-    <widget name="languagetext" position="270,320" size="95,30" font="Regular;18" />
+    <widget name="languagetext" position="270,320" size="180,30" font="Regular;18" />
     <widget name="wizard" pixmap="Army_MoodBlue_mod/wizard.png" position="220,120" zPosition="10" size="140,188" alphatest="on" />
-    <widget name="rc" pixmaps="Army_MoodBlue_mod/rc.png,Army_MoodBlue_mod/rcold.png" position="810,120" zPosition="10" size="154,500" alphatest="on" />
+    <widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="990,90" zPosition="10" size="154,500" alphatest="on" />
     <widget name="arrowdown" pixmap="Army_MoodBlue_mod/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
     <widget name="arrowdown2" pixmap="Army_MoodBlue_mod/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
     <widget name="arrowup" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
     <widget name="arrowup2" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
   </screen>
-  <screen name="LanguageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
-    <ePixmap pixmap="Army_MoodBlue_mod/frame_base-fs8.png" zPosition="-1" position="0,0" size="1280,720" alphatest="on" />
-    <widget name="text" position="153,50" size="340,240" font="Regular;23" transparent="1" />
-    <widget source="languages" render="Listbox" position="50,300" size="440,200" scrollbarMode="showOnDemand">
-      <convert type="TemplatedMultiContent">
-				{"template": [
-						MultiContentEntryText(pos = (80, 10), size = (200, 50), flags = RT_HALIGN_LEFT, text = 1), # index 1 is the language name,
-						MultiContentEntryPixmap(pos = (10, 5), size = (60, 40), png = 2), # index 2 is the pixmap
-					],
-				 "fonts": [gFont("Regular", 20)],
-				 "itemHeight": 50
-				}
-			</convert>
+  <screen name="DefaultWizard" position="340,134" size="600,500" title="Welcome..." >
+    <ePixmap pixmap="Army_MoodBlue_mod/frame_box-fs8.png" zPosition="-1" position="0,0" size="600,500" alphatest="on" />	
+    <widget name="wizard" pixmap="Army_MoodBlue_mod/wizard.png" position="60,20" zPosition="10" size="140,188" transparent="1" alphatest="on"/>
+    <widget name="text" position="80,150" size="690,240" font="Regular;22" foregroundColor="#58bcff" backgroundColor="transpBlack" transparent="1"/>
+    <ePixmap pixmap="Army_MoodBlue_mod/buttons/button_red.png" position="80,223" size="15,16" alphatest="on" />
+    <widget name="languagetext" position="110,220" size="120,30" font="Regular;20" />
+    <widget source="list" render="Listbox"	position="20,300" size="560,200" scrollbarMode="showOnDemand" >
+	    <convert type="StringList" />
     </widget>
-    <widget name="wizard" pixmap="Army_MoodBlue_mod/wizard.png" position="40,50" zPosition="10" size="140,188" alphatest="on" />
-    <widget name="rc" pixmaps="Army_MoodBlue_mod/rc.png,Army_MoodBlue_mod/rcold.png" position="500,50" zPosition="10" size="154,500" alphatest="on" />
-    <widget name="arrowdown" pixmap="Army_MoodBlue_mod/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
-    <widget name="arrowdown2" pixmap="Army_MoodBlue_mod/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
-    <widget name="arrowup" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
-    <widget name="arrowup2" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
+    <widget name="config" zPosition="1" position="20,300" size="560,200" scrollbarMode="showOnDemand" />            
+    <widget name="rc" pixmap="Army_MoodBlue_mod/rc.png" position="600,502" zPosition="10" size="154,500" transparent="1" alphatest="on"/>
+    <widget name="arrowdown" pixmap="Army_MoodBlue_mod/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
+    <widget name="arrowup" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
+    <widget name="arrowup2" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
+  </screen>
+  <screen name="VideoWizard" position="0,0" size="1280,720" title="Select Video Output..." backgroundColor="black" flags="wfNoBorder">
+    <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png"  />
+    <ePixmap position="80,620" zPosition="3" size="60,40" pixmap="Army_MoodBlue_mod/button_ok.png" alphatest="blend" transparent="1" />
+    <eLabel text="Select Video Output..." position="80,30" size="800,44" font="RegularAA;40" halign="left" foregroundColor="#58bcff" backgroundColor="transpBlack" transparent="1"/>
+    <widget name="wizard" pixmap="Army_MoodBlue_mod/wizard.png" position="830,120" zPosition="10" size="140,188" transparent="1" alphatest="on"/>
+    <widget name="text" position="80,150" size="690,240" font="Regular;22" foregroundColor="#58bcff" backgroundColor="transpBlack" transparent="1"/>
+    <ePixmap pixmap="Army_MoodBlue_mod/buttons/button_red.png" position="320,114" size="15,16" alphatest="on" />
+    <widget name="languagetext" position="350,108" size="180,30" font="Regular;20" foregroundColor="grey" backgroundColor="transpBlack" transparent="1"/>
+    <widget source="list" render="Listbox"	position="80,400" size="690,200" scrollbarMode="showOnDemand"  selectionPixmap="Army_MoodBlue_mod/icons/listselection710x30-fs8.png" transparent="1" >
+	    <convert type="StringList" />
+    </widget>
+    <widget name="config"  position="80,400" size="690,200" scrollbarMode="showOnDemand"   transparent="1" />   
+  </screen> 
+  <screen name="DreamPackageWizard" position="280,70" size="1280,720" title="Welcome..." flags="wfNoBorder" >
+    <widget name="text" position="80,150" size="690,240" font="Regular;22" foregroundColor="#58bcff" backgroundColor="transpBlack" transparent="1"/>
+    <widget source="list" render="Listbox" position="50,300" size="440,200" scrollbarMode="showOnDemand" >
+	    <convert type="StringList" />
+    </widget>
+    <ePixmap pixmap="Army_MoodBlue_mod/buttons/button_red.png" position="40,225" size="15,16" alphatest="on" />
+    <widget name="languagetext" position="55,225" size="180,30" font="Regular;18" />
+    <widget name="config" position="50,300" zPosition="1" size="440,200" transparent="1" scrollbarMode="showOnDemand" />            
+    <widget name="wizard" pixmap="Army_MoodBlue_mod/wizard.png" position="40,50" zPosition="10" size="140,188" transparent="1" alphatest="on"/>
+    <widget name="rc" pixmap="Army_MoodBlue_mod/rc.png" position="500,600" zPosition="10" size="154,500" transparent="1" alphatest="on"/>
+    <widget name="arrowdown" pixmap="Army_MoodBlue_mod/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
+    <widget name="arrowup" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
+    <widget name="arrowup2" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
+  </screen>
+
+  <screen name="DefaultSatLists" position="center,center" size="600,460" title="Default services lists" >
+    <ePixmap pixmap="Army_MoodBlue_mod/frame_box-fs8.png" zPosition="-1" position="0,0" size="600,460" alphatest="on" />	
+    <widget name="wizard" pixmap="Army_MoodBlue_mod/wizard.png" position="60,20" zPosition="10" size="140,188" transparent="1" alphatest="on"/>
+    <widget name="text" position="80,150" size="690,240" font="Regular;22" foregroundColor="#58bcff" backgroundColor="transpBlack" transparent="1"/>
+    <ePixmap pixmap="Army_MoodBlue_mod/buttons/button_red.png" position="80,223" size="15,16" alphatest="on" />
+    <widget name="languagetext" position="110,220" size="180,30" font="Regular;20" />
+    <widget source="list" render="Listbox"	position="20,300" size="560,200" scrollbarMode="showOnDemand" >
+	    <convert type="StringList" />
+    </widget>
+    <widget name="config" zPosition="1" position="20,300" size="560,200" scrollbarMode="showOnDemand" />            
+    <!--<widget name="rc" pixmap="Army_MoodBlue_mod/rc.png" position="600,502" zPosition="10" size="154,500" transparent="1" alphatest="on"/>
+    <widget name="arrowdown" pixmap="Army_MoodBlue_mod/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
+    <widget name="arrowup" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
+    <widget name="arrowup2" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>-->
   </screen>
   <screen name="EPGSelection" position="0,0" size="1280,720" title="EPG Selection">
     <ePixmap pixmap="Army_MoodBlue_mod/frame_base-fs8.png" position="0,0" zPosition="-1" size="1280,720" />
@@ -1649,7 +1722,7 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     <ePixmap pixmap="Army_MoodBlue_mod/frame_base-fs8.png" zPosition="-1" position="center,center" size="1280,720" alphatest="on" />
     <ePixmap position="421,117" zPosition="3" size="806,550" pixmap="Army_MoodBlue_mod/r806x550.png" alphatest="blend" transparent="1" />
     <eLabel text="help..." position="450,47" size="740,50" font="RegularAA; 36" halign="center" backgroundColor="transpBlack" transparent="1" foregroundColor="un99ff" />
-    <widget name="rc" position="150,105" size="154,500" pixmaps="Army_MoodBlue_mod/rc.png,Army_MoodBlue_mod/rcold.png" zPosition="10" alphatest="on" />
+    <widget name="rc" position="150,105" size="154,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="on" />
     <widget name="long_key" position="80,607" size="300,30" font="Regular; 26" halign="center" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
     <widget name="list" position="450,140" size="740,494" scrollbarMode="showOnDemand" transparent="1" selectionPixmap="Army_MoodBlue_mod/icons/listselection450x38_S-fs8.png" itemHeight="25" />
     <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="Army_MoodBlue_mod/arrowdown.png" zPosition="11" alphatest="on" />
@@ -1922,15 +1995,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="config" position="20,20" size="670,80" scrollbarMode="showOnDemand" transparent="1" />
     <widget source="introduction" render="Label" position="15,140" size="680,25" zPosition="10" font="Regular;22" halign="center" valign="center" backgroundColor="un25062748" transparent="1" />
   </screen>
-  <screen name="CleanupWizardConfiguration" position="center,center" size="710,340" title="CleanupWizard settings">
-    <ePixmap pixmap="Army_MoodBlue_mod/frame_box-fs8.png" zPosition="-1" position="0,0" size="710,340" alphatest="on" />
-    <ePixmap position="70,280" size="250,40" pixmap="Army_MoodBlue_mod/buttons/red25.png" alphatest="on" zPosition="1" />
-    <ePixmap position="390,280" size="250,40" pixmap="Army_MoodBlue_mod/buttons/green25.png" alphatest="on" zPosition="1" />
-    <widget source="key_red" render="Label" position="70,280" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-    <widget source="key_green" render="Label" position="390,280" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-    <widget name="config" position="20,20" size="670,80" scrollbarMode="showOnDemand" transparent="1" />
-    <widget source="status" render="Label" position="30,240" size="650,25" zPosition="10" font="Regular;22" halign="center" valign="center" backgroundColor="un25062748" transparent="1" />
-  </screen>
+ 
   <screen name="ParentalControlChangePin" position="center,center" size="600,340" title="Change pin code">
     <ePixmap pixmap="Army_MoodBlue_mod/frame_box-fs8.png" zPosition="-1" position="0,0" size="600,340" alphatest="on" />
     <widget name="config" position="20,20" size="560,310" transparent="1" />
@@ -2201,22 +2266,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="introduction" render="Label" position="120,570" size="600,28" zPosition="10" font="Regular;24" halign="center" valign="center" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
   </screen>
   <screen name="Standby" position="0,0" size="1280,720" title="Standby" flags="wfNoBorder" />
-  <screen name="StartWizard" position="340,134" size="600,500" title="Welcome...">
-    <ePixmap pixmap="Army_MoodBlue_mod/frame_box-fs8.png" zPosition="-1" position="0,0" size="600,500" alphatest="on" />
-    <widget name="wizard" pixmap="Army_MoodBlue_mod/wizard.png" position="60,20" zPosition="10" size="140,188" transparent="1" alphatest="on" />
-    <widget name="text" position="230,50" size="340,270" font="Regular;23" />
-    <ePixmap pixmap="Army_MoodBlue_mod/buttons/button_red.png" position="40,223" size="15,16" alphatest="on" />
-    <widget name="languagetext" position="70,220" size="120,30" font="Regular;20" />
-    <widget source="list" render="Listbox" position="20,300" size="560,200" scrollbarMode="showOnDemand">
-      <convert type="StringList" />
-    </widget>
-    <widget name="config" zPosition="1" position="20,300" size="560,200" scrollbarMode="showOnDemand" transparent="1" />
-    <widget name="rc" pixmap="Army_MoodBlue_mod/rc.png" position="600,502" zPosition="10" size="154,500" transparent="1" alphatest="on" />
-    <widget name="arrowdown" pixmap="Army_MoodBlue_mod/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on" />
-    <widget name="arrowdown2" pixmap="Army_MoodBlue_mod/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on" />
-    <widget name="arrowup" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on" />
-    <widget name="arrowup2" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on" />
-  </screen>
+ 
   <screen name="SleepTimerEdit" position="340,240" size="660,260" title="Sleep Timer">
     <widget name="current_status" position="40,40" size="460,40" valign="center" font="Regular;22" />
     <widget name="red" pixmap="Army_MoodBlue_mod/buttons/button_red.png" position="10,88" size="12,12" alphatest="on" />
@@ -2656,33 +2706,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget name="text" position="10,20" size="550,25" font="Regular;23" />
     <widget name="input" position="10,55" size="550,25" font="Regular;20" />
   </screen>
-  <screen name="DreamPackageWizard" position="280,70" size="1280,720" title="Welcome..." flags="wfNoBorder">
-    <widget name="text" position="153,50" size="340,270" font="Regular;23" />
-    <widget source="list" render="Listbox" position="50,300" size="440,200" scrollbarMode="showOnDemand">
-      <convert type="StringList" />
-    </widget>
-    <ePixmap pixmap="Army_MoodBlue_mod/buttons/button_red.png" position="40,225" size="15,16" alphatest="on" />
-    <widget name="languagetext" position="55,225" size="95,30" font="Regular;18" />
-    <widget name="config" position="50,300" zPosition="1" size="440,200" transparent="1" scrollbarMode="showOnDemand" />
-    <widget name="wizard" pixmap="Army_MoodBlue_mod/wizard.png" position="40,50" zPosition="10" size="140,188" transparent="1" alphatest="on" />
-    <widget name="rc" pixmap="Army_MoodBlue_mod/rc.png" position="500,600" zPosition="10" size="154,500" transparent="1" alphatest="on" />
-    <widget name="arrowdown" pixmap="Army_MoodBlue_mod/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on" />
-    <widget name="arrowup" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on" />
-    <widget name="arrowup2" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on" />
-  </screen>
-  <screen name="NetworkWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
-    <widget name="text" position="480,110" size="340,400" font="Regular;24" />
-    <widget source="list" render="Listbox" position="380,410" size="440,180" scrollbarMode="showOnDemand">
-      <convert type="StringList" />
-    </widget>
-    <widget name="config" position="333,410" zPosition="1" size="440,180" transparent="1" scrollbarMode="showOnDemand" />
-    <ePixmap pixmap="Army_MoodBlue_mod/buttons/button_red.png" position="260,354" zPosition="0" size="15,16" transparent="1" alphatest="on" />
-    <widget name="languagetext" position="290,350" size="100,30" font="Regular;20" />
-    <widget name="wizard" pixmap="Army_MoodBlue_mod/wizard.png" position="240,140" zPosition="10" size="140,188" alphatest="on" />
-    <widget name="rc" pixmaps="Army_MoodBlue_mod/rc.png,Army_MoodBlue_mod/rcold.png" position="880,120" zPosition="10" size="154,500" alphatest="on" />
-    <widget name="arrowdown" pixmap="Army_MoodBlue_mod/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
-    <widget name="arrowup" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
-  </screen>
+  
   <screen name="UpdatePluginMenu" position="center,center" size="1160,560" title="Softwaremanager...">
     <ePixmap pixmap="Army_MoodBlue_mod/frame_box-fs8.png" zPosition="-1" position="0,0" size="1160,560" alphatest="on" />
     <ePixmap pixmap="Army_MoodBlue_mod/buttons/red25.png" position="455,500" size="250,40" alphatest="on" zPosition="1" />
