@@ -1250,10 +1250,10 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     </widget>
     <widget name="config"  position="80,400" size="690,200" scrollbarMode="showOnDemand" transparent="1" />  
     <widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="990,90" zPosition="10" size="154,500" alphatest="on" />
-    <widget name="arrowdown" pixmap="Army_MoodBlue_mod/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
-    <widget name="arrowdown2" pixmap="Army_MoodBlue_mod/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
-    <widget name="arrowup" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
-    <widget name="arrowup2" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />    
+    <widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
+    <widget name="arrowdown2" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
+    <widget name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
+    <widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />    
   </screen>
   <screen name="NetworkWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder" >
     <eLabel text="Network Wizard" position="80,30" size="800,44" font="RegularAA;40" halign="left" foregroundColor="#58bcff" backgroundColor="transpBlack" transparent="1"/>    
@@ -1270,10 +1270,10 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     </widget>
     <widget name="config"  position="80,400" size="690,200" scrollbarMode="showOnDemand"   transparent="1" />
     <widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="990,90" zPosition="10" size="154,500" alphatest="on" />
-    <widget name="arrowdown" pixmap="Army_MoodBlue_mod/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
-    <widget name="arrowdown2" pixmap="Army_MoodBlue_mod/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
-    <widget name="arrowup" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
-    <widget name="arrowup2" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />    
+    <widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
+    <widget name="arrowdown2" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
+    <widget name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
+    <widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />    
   </screen>
   <screen name="LanguageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
      <eLabel text="Language Wizard" position="80,30" size="800,44" font="RegularAA;40" halign="left" foregroundColor="#58bcff" backgroundColor="transpBlack" transparent="1"/>    
@@ -1295,10 +1295,10 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
 	    </convert>
     </widget>
     <widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="990,90" zPosition="10" size="154,500" alphatest="on" />
-    <widget name="arrowdown" pixmap="Army_MoodBlue_mod/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
-    <widget name="arrowdown2" pixmap="Army_MoodBlue_mod/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
-    <widget name="arrowup" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
-    <widget name="arrowup2" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />    
+    <widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
+    <widget name="arrowdown2" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
+    <widget name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
+    <widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />    
   </screen>
   <screen name="ImageWizard" position="0,0" size="1280,720" title="Welcome..." flags="wfNoBorder">
     <eLabel text="Image Wizard" position="80,30" size="800,44" font="RegularAA;40" halign="left" foregroundColor="#58bcff" backgroundColor="transpBlack" transparent="1"/>    
@@ -1313,10 +1313,10 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     <widget name="languagetext" position="270,320" size="180,30" font="Regular;18" />
     <widget name="wizard" pixmap="Army_MoodBlue_mod/wizard.png" position="220,120" zPosition="10" size="140,188" alphatest="on" />
     <widget name="rc" pixmaps="skin_default/rc.png,skin_default/rcold.png" position="990,90" zPosition="10" size="154,500" alphatest="on" />
-    <widget name="arrowdown" pixmap="Army_MoodBlue_mod/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
-    <widget name="arrowdown2" pixmap="Army_MoodBlue_mod/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
-    <widget name="arrowup" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
-    <widget name="arrowup2" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
+    <widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
+    <widget name="arrowdown2" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
+    <widget name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
+    <widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" alphatest="on" />
   </screen>
   <screen name="DefaultWizard" position="340,134" size="600,500" title="Welcome..." >
     <ePixmap pixmap="Army_MoodBlue_mod/frame_box-fs8.png" zPosition="-1" position="0,0" size="600,500" alphatest="on" />	
@@ -1329,9 +1329,9 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     </widget>
     <widget name="config" zPosition="1" position="20,300" size="560,200" scrollbarMode="showOnDemand" />            
     <widget name="rc" pixmap="Army_MoodBlue_mod/rc.png" position="600,502" zPosition="10" size="154,500" transparent="1" alphatest="on"/>
-    <widget name="arrowdown" pixmap="Army_MoodBlue_mod/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
-    <widget name="arrowup" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
-    <widget name="arrowup2" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
+    <widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
+    <widget name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
+    <widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
   </screen>
   <screen name="VideoWizard" position="0,0" size="1280,720" title="Select Video Output..." backgroundColor="black" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png"  />
@@ -1356,9 +1356,9 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     <widget name="config" position="50,300" zPosition="1" size="440,200" transparent="1" scrollbarMode="showOnDemand" />            
     <widget name="wizard" pixmap="Army_MoodBlue_mod/wizard.png" position="40,50" zPosition="10" size="140,188" transparent="1" alphatest="on"/>
     <widget name="rc" pixmap="Army_MoodBlue_mod/rc.png" position="500,600" zPosition="10" size="154,500" transparent="1" alphatest="on"/>
-    <widget name="arrowdown" pixmap="Army_MoodBlue_mod/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
-    <widget name="arrowup" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
-    <widget name="arrowup2" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
+    <widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
+    <widget name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
+    <widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
   </screen>
 
   <screen name="DefaultSatLists" position="center,center" size="600,460" title="Default services lists" >
@@ -1372,9 +1372,9 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     </widget>
     <widget name="config" zPosition="1" position="20,300" size="560,200" scrollbarMode="showOnDemand" />            
     <!--<widget name="rc" pixmap="Army_MoodBlue_mod/rc.png" position="600,502" zPosition="10" size="154,500" transparent="1" alphatest="on"/>
-    <widget name="arrowdown" pixmap="Army_MoodBlue_mod/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
-    <widget name="arrowup" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
-    <widget name="arrowup2" pixmap="Army_MoodBlue_mod/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>-->
+    <widget name="arrowdown" pixmap="skin_default/arrowdown.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
+    <widget name="arrowup" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>
+    <widget name="arrowup2" pixmap="skin_default/arrowup.png" position="-100,-100" zPosition="11" size="37,70" transparent="1" alphatest="on"/>-->
   </screen>
   <screen name="EPGSelection" position="0,0" size="1280,720" title="EPG Selection">
     <ePixmap pixmap="Army_MoodBlue_mod/frame_base-fs8.png" position="0,0" zPosition="-1" size="1280,720" />
@@ -1725,10 +1725,10 @@ self.instance.move(ePoint((1280-wsizex)/2, (720-wsizey)/(count &gt; 7 and 2 or 3
     <widget name="rc" position="150,105" size="154,500" pixmaps="skin_default/rc.png,skin_default/rcold.png" zPosition="10" alphatest="on" />
     <widget name="long_key" position="80,607" size="300,30" font="Regular; 26" halign="center" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
     <widget name="list" position="450,140" size="740,494" scrollbarMode="showOnDemand" transparent="1" selectionPixmap="Army_MoodBlue_mod/icons/listselection450x38_S-fs8.png" itemHeight="25" />
-    <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="Army_MoodBlue_mod/arrowdown.png" zPosition="11" alphatest="on" />
-    <widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="Army_MoodBlue_mod/arrowdown.png" zPosition="11" alphatest="on" />
-    <widget name="arrowup" position="-100,-100" size="37,70" pixmap="Army_MoodBlue_mod/arrowup.png" zPosition="11" alphatest="on" />
-    <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="Army_MoodBlue_mod/arrowup.png" zPosition="11" alphatest="on" />
+    <widget name="arrowdown" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="on" />
+    <widget name="arrowdown2" position="-100,-100" size="37,70" pixmap="skin_default/arrowdown.png" zPosition="11" alphatest="on" />
+    <widget name="arrowup" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="on" />
+    <widget name="arrowup2" position="-100,-100" size="37,70" pixmap="skin_default/arrowup.png" zPosition="11" alphatest="on" />
   </screen>
   <screen name="HistoryZapSelector" position="center,center" size="350,300" title="Zap History">
     <ePixmap pixmap="Army_MoodBlue_mod/frame_box-fs8.png" zPosition="-1" position="0,0" size="350,300" alphatest="on" />
