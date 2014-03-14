@@ -3796,9 +3796,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="lab1" render="Label" position="70,123" size="369,35" font="Regular;30" transparent="1" zPosition="3" backgroundColor="transpBlack" />
     <widget source="lab2" render="Label" position="70,173" size="370,25" font="Regular;19" transparent="1" zPosition="3" backgroundColor="transpBlack" />
     <widget source="lab3" render="Label" position="70,213" size="369,25" font="Regular;19" transparent="1" zPosition="3" backgroundColor="transpBlack" />
-    <eLabel text="OPEN SOURCE" position="450,253" size="353,28" font="Regular;22" transparent="1" zPosition="1" />
-    <eLabel text="https://github.com/openatv" position="450,289" size="352,28" font="Regular;19" transparent="1" zPosition="1" />
-    <eLabel text="https://github.com/oe-alliance" position="450,325" size="354,28" font="Regular;19" transparent="1" zPosition="1" />
     <widget name="AboutScrollLabel" position="70,253" size="369,352" font="Regular;20" transparent="1" zPosition="3" scrollbarMode="showOnDemand" />
   </screen>
   <screen name="Devices" position="0,0" size="1280,720" title="SystemInfo" backgroundColor="transparent" flags="wfNoBorder">
@@ -4435,9 +4432,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="lab1" render="Label" position="70,123" size="369,35" font="Regular;30" transparent="1" zPosition="3" backgroundColor="transpBlack" />
     <widget source="lab2" render="Label" position="70,173" size="370,25" font="Regular;19" transparent="1" zPosition="3" backgroundColor="transpBlack" />
     <widget source="lab3" render="Label" position="70,213" size="369,25" font="Regular;19" transparent="1" zPosition="3" backgroundColor="transpBlack" />
-    <eLabel text="OPEN SOURCE" position="450,253" size="353,28" font="Regular;22" transparent="1" zPosition="1" />
-    <eLabel text="https://github.com/" position="450,289" size="352,28" font="Regular;19" transparent="1" zPosition="1" />
-    <eLabel text="https://github.com/oe-alliance" position="450,325" size="354,28" font="Regular;19" transparent="1" zPosition="1" />
     <widget name="AboutScrollLabel" position="70,253" size="369,352" font="Regular;20" transparent="1" zPosition="3" scrollbarMode="showOnDemand" />
   </screen>
   <screen name="VIXMenu" position="0,0" size="1280,720" title="ViX" backgroundColor="transparent" flags="wfNoBorder">
