@@ -394,12 +394,13 @@
     <ePixmap position="-40,-93" size="34,45" pixmap="Army_MoodBlue_mod/unhandled-key.png" alphatest="blend" transparent="1" />
   </screen>
    <screen name="Menu" position="0,0" size="1280,720" title="Main menu" backgroundColor="transparent" flags="wfNoBorder">
- <widget source="title" render="Label" position="80,30" size="500,34" font="RegularAA;28" halign="left" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
+    <widget source="Title" render="Label" position="80,30" size="500,34" font="RegularAA;28" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1" />
     
-    <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
+    <ePixmap position="center,center" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
+    <ePixmap position="960,470" zPosition="1" size="250,160" pixmap="Army_MoodBlue_mod/menu/information.png" alphatest="on" />
     <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
-    <ePixmap position="832,81" zPosition="-1" size="378,216" pixmap="Army_MoodBlue_mod/tv_2-fs8.png" alphatest="on" />
     <ePixmap position="58,81" zPosition="2" size="760,550" pixmap="Army_MoodBlue_mod/r760x550.png" alphatest="blend" transparent="1" />
+    <ePixmap position="832,81" zPosition="-1" size="378,216" pixmap="Army_MoodBlue_mod/tv_2-fs8.png" alphatest="on" />
     <widget source="session.VideoPicture" render="Pig" position=" 836,84" size="370,208" zPosition="3" backgroundColor="transparent2" />
     <widget source="session.CurrentService" render="Label" position="815,330" size="420,32" zPosition="2" font="Regular;28" halign="center" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="background">
       <convert type="ServiceName">Name</convert>
@@ -410,7 +411,7 @@
     <widget source="session.Event_Now" render="Progress" pixmap="Army_MoodBlue_mod/chan_p_bar.png" size="300,14" position="870,310" zPosition="1" backgroundColor="darkgrey" transparent="1">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="menu" render="Listbox" position="73,98" size="710,512" scrollbarMode="showNever" selectionPixmap="Army_MoodBlue_mod/icons/listselection450x38-fs8.png" backgroundPixmap="Army_MoodBlue_mod/icons/butselection.png" transparent="1" zPosition="0">
+    <widget source="menu" render="Listbox" position="73,98" size="710,510" scrollbarMode="showNever" selectionPixmap="Army_MoodBlue_mod/icons/listselection450x38-fs8.png" backgroundPixmap="Army_MoodBlue_mod/icons/butselection.png" transparent="1" zPosition="0">
       <convert type="TemplatedMultiContent">
 			{"template": [ MultiContentEntryText(pos = (60, 2), size = (450, 38), flags = RT_HALIGN_LEFT, text = 0) ],
 			"fonts": [gFont("Regular", 26)],
@@ -3795,6 +3796,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="lab1" render="Label" position="70,123" size="369,35" font="Regular;30" transparent="1" zPosition="3" backgroundColor="transpBlack" />
     <widget source="lab2" render="Label" position="70,173" size="370,25" font="Regular;19" transparent="1" zPosition="3" backgroundColor="transpBlack" />
     <widget source="lab3" render="Label" position="70,213" size="369,25" font="Regular;19" transparent="1" zPosition="3" backgroundColor="transpBlack" />
+    <eLabel text="OPEN SOURCE" position="450,253" size="353,28" font="Regular;22" transparent="1" zPosition="1" />
+    <eLabel text="https://github.com/openatv" position="450,289" size="352,28" font="Regular;19" transparent="1" zPosition="1" />
+    <eLabel text="https://github.com/oe-alliance" position="450,325" size="354,28" font="Regular;19" transparent="1" zPosition="1" />
     <widget name="AboutScrollLabel" position="70,253" size="369,352" font="Regular;20" transparent="1" zPosition="3" scrollbarMode="showOnDemand" />
   </screen>
   <screen name="Devices" position="0,0" size="1280,720" title="SystemInfo" backgroundColor="transparent" flags="wfNoBorder">
@@ -4431,6 +4435,9 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="lab1" render="Label" position="70,123" size="369,35" font="Regular;30" transparent="1" zPosition="3" backgroundColor="transpBlack" />
     <widget source="lab2" render="Label" position="70,173" size="370,25" font="Regular;19" transparent="1" zPosition="3" backgroundColor="transpBlack" />
     <widget source="lab3" render="Label" position="70,213" size="369,25" font="Regular;19" transparent="1" zPosition="3" backgroundColor="transpBlack" />
+    <eLabel text="OPEN SOURCE" position="450,253" size="353,28" font="Regular;22" transparent="1" zPosition="1" />
+    <eLabel text="https://github.com/" position="450,289" size="352,28" font="Regular;19" transparent="1" zPosition="1" />
+    <eLabel text="https://github.com/oe-alliance" position="450,325" size="354,28" font="Regular;19" transparent="1" zPosition="1" />
     <widget name="AboutScrollLabel" position="70,253" size="369,352" font="Regular;20" transparent="1" zPosition="3" scrollbarMode="showOnDemand" />
   </screen>
   <screen name="VIXMenu" position="0,0" size="1280,720" title="ViX" backgroundColor="transparent" flags="wfNoBorder">
