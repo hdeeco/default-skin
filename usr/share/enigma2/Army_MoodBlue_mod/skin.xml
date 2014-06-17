@@ -4559,6 +4559,261 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget position="12,562" size="250,36" name="btt_yellow" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="3" />
     <widget position="315,562" size="250,36" name="btt_blue" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="3" />
   </screen>
-
-			
+  <screen name="FullscreenTopPanel1">
+	  <ePixmap pixmap="Army_MoodBlue_mod/frame_base-fs8.png" position="0,0" size="1280,720" zPosition="-1" />
+	  <widget source="title" render="Label" position="80,30" size="800,38" font="RegularAA;34" halign="left" foregroundColor="#004c74" backgroundColor="#11362d" transparent="1"/>
+  </screen>
+  <screen name="FullscreenTopPanel2">
+	  <ePixmap pixmap="Army_MoodBlue_mod/frame_base-fs8.png" position="0,0" size="1280,720" zPosition="-1" />	  
+	  <widget source="Title" render="Label" position="80,30" size="800,38" font="RegularAA;34" halign="left" foregroundColor="#004c74" backgroundColor="#11362d" transparent="1"/>
+  </screen>
+  <screen name="FullscreenPIGPanel">
+	  <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
+	  <ePixmap position="832,81" zPosition="-1" size="378,216" pixmap="Army_MoodBlue_mod/tv_2-fs8.png" alphatest="on" />
+	  <ePixmap position="58,81" zPosition="2" size="760,550" pixmap="Army_MoodBlue_mod/r760x550.png" alphatest="blend" transparent="1" />
+	  <widget source="session.VideoPicture" render="Pig" position=" 836,84" size="370,208" zPosition="3" backgroundColor="#ff000000"/>
+	    <widget source="session.CurrentService" render="Label" position="815,330" size="420,32" zPosition="2" font="Regular;28" halign="center" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="background">
+	  <convert type="ServiceName">Name</convert>
+	  </widget>
+		  <widget source="session.Event_Now" render="Label" position="850,380" size="350,100" zPosition="2" halign="center" font="Regular;24" foregroundColor="#58bcff" backgroundColor="transpBlack" transparent="1" >
+		  <convert type="EventName">Name</convert>
+	  </widget>
+	  <widget source="session.Event_Now" render="Progress" pixmap="Army_MoodBlue_mod/chan_p_bar.png" size="300,14" position="870,310" zPosition="1"  backgroundColor="darkgrey" transparent="1">
+		  <convert type="EventTime">Progress</convert>
+	  </widget>
+  </screen>
+  <screen name="FullscreenPIGPanel2">
+	  <ePixmap position="832,81" zPosition="-1" size="378,216" pixmap="Army_MoodBlue_mod/tv_2-fs8.png" alphatest="on" />
+	  <ePixmap position="58,81" zPosition="2" size="760,550" pixmap="Army_MoodBlue_mod/r760x550.png" alphatest="blend" transparent="1" />
+	  <widget source="session.VideoPicture" render="Pig" position=" 836,84" size="370,208" zPosition="3" backgroundColor="#ff000000"/>
+  </screen>  
+  <screen name="FullscreenRed1Panel">
+	  <ePixmap position="40,645" size="250,40" zPosition="1" pixmap="Army_MoodBlue_mod/buttons/red25.png" transparent="1" alphatest="on"/>
+	  <widget name="key_red" position="40,650" zPosition="2" size="250,25" font="Regular;20" valign="center" halign="center" backgroundColor="red" transparent="1" />
+  </screen>
+  <screen name="FullscreenGreen1Panel">
+	  <ePixmap position="200,645" size="250,40" zPosition="1" pixmap="Army_MoodBlue_mod/buttons/green25.png" transparent="1" alphatest="on"/>
+	  <widget name="key_green" position="200,650" zPosition="2" size="250,25" font="Regular;20" valign="center" halign="center" backgroundColor="green" transparent="1" />
+  </screen>
+  <screen name="FullscreenYellow1Panel">
+	  <ePixmap position="360,645" size="250,40" zPosition="1" pixmap="Army_MoodBlue_mod/buttons/yellow25.png" transparent="1" alphatest="on"/>
+	  <widget name="key_yellow" position="360,650" zPosition="2" size="250,25" font="Regular;20" valign="center" halign="center" backgroundColor="yellow" transparent="1" />
+  </screen>
+  <screen name="FullscreenBlue1Panel">
+	  <ePixmap position="550,645" size="250,40" zPosition="1" pixmap="Army_MoodBlue_mod/buttons/blue25.png" transparent="1" alphatest="on"/>
+	  <widget name="key_blue" position="550,650" zPosition="2" size="250,25" font="Regular;20" valign="center" halign="center" backgroundColor="blue" transparent="1" />
+  </screen>
+<screen name="FullscreenRed2Panel">
+		<ePixmap position="40,645" size="250,40" zPosition="1" pixmap="Army_MoodBlue_mod/buttons/red25.png" transparent="1" alphatest="on"/>
+		<widget source="key_red" render="Label" position="40,650" zPosition="2" size="250,25" font="Regular;20" valign="center" halign="center" backgroundColor="red" transparent="1" />
+	</screen>
+	<screen name="FullscreenGreen2Panel">
+		<ePixmap position="200,645" size="250,40" zPosition="1" pixmap="Army_MoodBlue_mod/buttons/green25.png" transparent="1" alphatest="on"/>
+		<widget source="key_green" render="Label" position="200,650" zPosition="2" size="250,25" font="Regular;20" valign="center" halign="center" backgroundColor="green" transparent="1" />
+	</screen>
+	<screen name="FullscreenYellow2Panel">
+		<ePixmap position="360,645" size="250,40" zPosition="1" pixmap="Army_MoodBlue_mod/buttons/yellow25.png" transparent="1" alphatest="on"/>
+		<widget source="key_yellow" render="Label" position="360,650" zPosition="2" size="250,25" font="Regular;20" valign="center" halign="center" backgroundColor="yellow" transparent="1" />
+	</screen>
+	<screen name="FullscreenBlue2Panel">
+		<ePixmap position="550,645" size="250,40" zPosition="1" pixmap="Army_MoodBlue_mod/buttons/blue25.png" transparent="1" alphatest="on"/>
+		<widget source="key_blue" render="Label" position="550,650" zPosition="2" size="250,25" font="Regular;20" valign="center" halign="center" backgroundColor="blue" transparent="1" />
+	</screen>  
+  <screen name="CCcamInfoMain" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	  <panel name="FullscreenTopPanel2" />
+	  <panel name="FullscreenPIGPanel" />
+	  <widget name="menu" position="80,100" size="705,514" scrollbarMode="showOnDemand" transparent="1" />
+  </screen>
+  <screen name="CCcamInfoEcmInfoSelection" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	  <panel name="FullscreenTopPanel2" />
+	  <panel name="FullscreenPIGPanel" />
+	  <widget name="list" position="80,100" size="705,514" scrollbarMode="showOnDemand" transparent="1" />
+  </screen>
+  <screen name="CCcamInfoInfoScreen" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	  <panel name="FullscreenTopPanel2" />
+	  <panel name="FullscreenPIGPanel" />
+	  <widget name="text" position="80,100" size="705,514" scrollbarMode="showOnDemand" transparent="1" font="Regular;18"/>
+  </screen>
+  <screen name="CCcamShareViewMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	  <panel name="FullscreenTopPanel2" />
+	  <panel name="FullscreenPIGPanel" />
+	  <widget name="list" position="80,100" size="705,383" scrollbarMode="showOnDemand" transparent="1" />
+	  <eLabel text="" position="80,500" size="503,2" font="Regular;14" backgroundColor="white" />
+	  <widget name="uphops" position="80,500" size="240,25" font="Regular;20" />
+	  <widget name="cards" position="340,500" size="220,25" halign="right" font="Regular;20" />
+	  <widget name="providers" position="80,533" size="240,25" font="Regular;20" />
+	  <widget name="reshare" position="340,533" size="220,25" halign="right" font="Regular;20" />
+	  <widget name="title" position="80,563" size="480,20" halign="center" font="Regular;20" />
+  </screen>
+  <screen name="CCcamInfoSubMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	  <panel name="FullscreenTopPanel2" />
+	  <panel name="FullscreenPIGPanel" />
+	  <widget name="list" position="80,100" size="705,380" scrollbarMode="showOnDemand" transparent="1" />
+	  <eLabel text="" position="80,500" size="503,2" font="Regular;14" backgroundColor="white" />
+	  <widget name="info" position="80,508" size="503,167" font="Regular;16" transparent="0" />
+  </screen>
+  <screen name="CCcamInfoServerMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	  <panel name="FullscreenTopPanel2" />
+	  <panel name="FullscreenPIGPanel" />
+	  <widget name="list" position="80,100" size="705,380" scrollbarMode="showOnDemand" transparent="1" />
+	  <eLabel text="" position="80,500" size="503,2" font="Regular;14" backgroundColor="white" />
+	  <widget name="info" position="80,508" size="503,167" font="Regular;16" transparent="0" />
+  </screen>
+  <screen name="CCcamInfoConfigMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	  <panel name="FullscreenTopPanel2" />
+	  <panel name="FullscreenPIGPanel" />
+	  <widget name="config" position="80,100" size="705,514" scrollbarMode="showOnDemand" transparent="1" />
+  </screen>
+  <screen name="CCcamInfoRemoteBoxMenu" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	  <panel name="FullscreenTopPanel2" />
+	  <panel name="FullscreenPIGPanel" />
+	  <widget name="list" position="80,100" size="705,514" scrollbarMode="showOnDemand" transparent="1" />
+	  <panel name="FullscreenRed1Panel" />
+	  <panel name="FullscreenGreen1Panel" />
+	  <panel name="FullscreenYellow1Panel" />
+	  <panel name="FullscreenBlue1Panel" />
+  </screen>
+  <screen name="CCcamInfoShareInfo" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	  <panel name="FullscreenTopPanel2" />
+	  <panel name="FullscreenPIGPanel" />
+	  <widget name="list" position="80,100" size="705,514" scrollbarMode="showOnDemand" transparent="1" />
+	  <panel name="FullscreenRed1Panel" />
+	  <panel name="FullscreenGreen1Panel" />
+	  <panel name="FullscreenYellow1Panel" />
+	  <panel name="FullscreenBlue1Panel" />
+  </screen>
+  <screen name="CCcamInfoMenuConfig" position="0,0" size="1280,720" flags="wfNoBorder" backgroundColor="transparent">
+	  <panel name="FullscreenTopPanel2" />
+	  <panel name="FullscreenPIGPanel" />
+	  <widget name="list" position="80,100" size="705,514" scrollbarMode="showOnDemand" transparent="1" />
+	  <panel name="FullscreenRed1Panel" />
+	  <panel name="FullscreenGreen1Panel" />
+	  <panel name="FullscreenYellow1Panel" />
+  </screen>
+  <screen name="CCcamInfoConfigSwitcher" position="0,0" size="1280,720" flags="wfNoBorder" >
+	  <panel name="FullscreenTopPanel2" />
+	  <panel name="FullscreenPIGPanel" />
+	  <widget name="list" position="80,100" size="705,514" scrollbarMode="showOnDemand" transparent="1" />
+	  <panel name="FullscreenRed1Panel" />
+	  <panel name="FullscreenGreen1Panel" />
+	  <panel name="FullscreenYellow1Panel" />
+	  <panel name="FullscreenBlue1Panel" />	
+  </screen>
+  <screen name="AutoBouquetsMaker_Menu" position="0,0" size="1280,720" flags="wfNoBorder" >
+	  <panel name="FullscreenTopPanel2" />
+	  <panel name="FullscreenPIGPanel" />
+	  <widget source="list" render="Listbox"  position="80,90" size="705,425" scrollbarMode="showOnDemand"  selectionPixmap="Army_MoodBlue_mod/icons/listselection710x30-fs8.png"  backgroundColorSelected="#10000000" transparent="1" >
+		  <convert type="TemplatedMultiContent">
+		  {"template": [	MultiContentEntryText(pos = (0,0), size = (755,583), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1) ],
+				  "fonts": [gFont("Regular", 22)],
+				  "itemHeight": 28
+			  }
+		  </convert>
+	  </widget>
+  </screen>
+  <screen name="AutoBouquetsMaker_ProvidersSetup" position="0,0" size="1280,720" flags="wfNoBorder" >
+	  <panel name="FullscreenTopPanel2" />
+	  <panel name="FullscreenPIGPanel" />
+	  <panel name="FullscreenRed1Panel" />
+	  <panel name="FullscreenGreen1Panel" />
+	  <widget name="config"  position="80,90" size="705,425" scrollbarMode="showOnDemand"  selectionPixmap="Army_MoodBlue_mod/icons/listselection710x30-fs8.png"  backgroundColorSelected="#10000000" transparent="1" />
+	  <widget name="description" position="80,560" size="682,50" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
+	  <widget name="pleasewait" position="80,560" size="682,50" font="Regular;26" transparent="1" halign="center" valign="center" foregroundColor="grey" />
+  </screen>
+  <screen name="AutoBouquetsMaker_Setup" position="0,0" size="1280,720" flags="wfNoBorder" >
+	  <panel name="FullscreenTopPanel2" />
+	  <panel name="FullscreenPIGPanel" />
+	  <panel name="FullscreenRed2Panel" />
+	  <panel name="FullscreenGreen2Panel" />
+	  <widget name="config"  position="80,90" size="705,425" scrollbarMode="showOnDemand"  selectionPixmap="Army_MoodBlue_mod/icons/listselection710x30-fs8.png"  backgroundColorSelected="#10000000" transparent="1" />
+	  <widget name="description" position="80,560" size="682,50" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
+	  <widget name="pleasewait" position="520,82" size="755,583" font="Regular;26" transparent="1" halign="center" valign="center" foregroundColor="grey" />
+	  <widget name="text" position="80,560" size="682,50" zPosition="2" font="Regular;22" foregroundColor="secondFG" valign="center" halign="center" />
+  </screen>
+  <screen name="AutoBouquetsMaker_Ordering" position="0,0" size="1280,720" flags="wfNoBorder" >
+	  <panel name="FullscreenTopPanel2" />
+	  <panel name="FullscreenPIGPanel" />
+	  <panel name="FullscreenRed1Panel" />
+	  <panel name="FullscreenGreen1Panel" />
+	  <panel name="FullscreenYellow1Panel" />
+	  <panel name="FullscreenBlue1Panel" />
+	  <widget source="list" render="Listbox"  position="80,90" size="705,425" scrollbarMode="showOnDemand"  selectionPixmap="Army_MoodBlue_mod/icons/listselection710x30-fs8.png"  backgroundColorSelected="#10000000" transparent="1" >
+		  <convert type="TemplatedMultiContent">
+			  {"template": [
+				  MultiContentEntryText(pos = (10, 1), size = (440, 32), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 0),
+				  ],
+				  "fonts": [gFont("Regular", 22)],
+				  "itemHeight": 28
+			  }
+		  </convert>
+	  </widget>
+	  <widget name="pleasewait" position="80,560" size="682,50" font="Regular;26" transparent="1" halign="center" valign="center" foregroundColor="grey" />
+  </screen>
+  <screen name="AutoBouquetsMaker_Providers" position="0,0" size="1280,720" flags="wfNoBorder" >
+	  <panel name="FullscreenTopPanel2" />
+	  <panel name="FullscreenPIGPanel" />
+	  <panel name="FullscreenRed1Panel" />
+	  <panel name="FullscreenGreen1Panel" />
+	  <widget source="list" render="Listbox"  position="80,90" size="705,425" scrollbarMode="showOnDemand"  selectionPixmap="Army_MoodBlue_mod/icons/listselection710x30-fs8.png"  backgroundColorSelected="#10000000" transparent="1" >
+		  <convert type="TemplatedMultiContent">
+			  {"template": [
+				  MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (32, 32), png = 0),
+				  MultiContentEntryText(pos = (450, 0), size = (120, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+				  ],
+				  "fonts": [gFont("Regular", 22)],
+				  "itemHeight": 28
+			  }
+		  </convert>
+	  </widget>
+	  <widget name="pleasewait" position="80,560" size="682,50" font="Regular;26" transparent="1" halign="center" valign="center" foregroundColor="grey" />
+  </screen>
+  <screen name="AutoBouquetsMaker_HideSections" position="0,0" size="1280,720" flags="wfNoBorder" >
+	  <panel name="FullscreenTopPanel2" />
+	  <panel name="FullscreenPIGPanel" />
+	  <panel name="FullscreenRed1Panel" />
+	  <panel name="FullscreenGreen1Panel" />
+	  <widget source="list" render="Listbox"  position="80,90" size="705,425" scrollbarMode="showOnDemand"  selectionPixmap="Army_MoodBlue_mod/icons/listselection710x30-fs8.png"  backgroundColorSelected="#10000000" transparent="1" >
+		  <convert type="TemplatedMultiContent">
+			  {"template": [
+				  MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (32, 32), png = 0),
+				  MultiContentEntryText(pos = (47, 0), size = (400, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+				  MultiContentEntryText(pos = (450, 0), size = (120, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
+				  ],
+				  "fonts": [gFont("Regular", 22)],
+				  "itemHeight": 28
+			  }
+		  </convert>
+	  </widget>
+  </screen>
+  <screen name="AutoBouquetsMaker_KeepBouquets" position="0,0" size="1280,720" flags="wfNoBorder" >
+	  <panel name="FullscreenTopPanel2" />
+	  <panel name="FullscreenPIGPanel" />
+	  <panel name="FullscreenRed1Panel" />
+	  <panel name="FullscreenGreen1Panel" />
+	  <widget source="list" render="Listbox"  position="80,90" size="705,425" scrollbarMode="showOnDemand"  selectionPixmap="Army_MoodBlue_mod/icons/listselection710x30-fs8.png"  backgroundColorSelected="#10000000" transparent="1" >
+		  <convert type="TemplatedMultiContent">
+			  {"template": [
+				  MultiContentEntryPixmapAlphaTest(pos = (10, 0), size = (32, 32), png = 0),
+				  MultiContentEntryText(pos = (47, 0), size = (400, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 1),
+				  MultiContentEntryText(pos = (450, 0), size = (120, 30), font=0, flags = RT_HALIGN_LEFT|RT_VALIGN_TOP, text = 2),
+				  ],
+				  "fonts": [gFont("Regular", 22)],
+				  "itemHeight": 28
+			  }
+		  </convert>
+	  </widget>
+  </screen>
+  <screen name="AutoBouquetsMaker_Log" position="0,0" size="1280,720" flags="wfNoBorder" >
+	  <panel name="FullscreenTopPanel2" />
+	  <panel name="FullscreenPIGPanel" />
+	  <widget name="list" scrollbarMode="showOnDemand" font="Regular;20" itemHeight="28" position="80,90" size="705,425" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+  </screen>
+  <screen name="AutoBouquetsMaker_About" position="0,0" size="1280,720" flags="wfNoBorder" >
+	  <panel name="FullscreenTopPanel2" />
+	  <panel name="FullscreenPIGPanel" />
+	  <panel name="FullscreenRed1Panel" />
+	  <widget name="about" scrollbarMode="showOnDemand" font="Regular;20" itemHeight="28" position="80,90" size="705,425" transparent="1" foregroundColor="grey" enableWrapAround="1" />
+	  <widget name="oealogo" position="720,515" size="177,130" alphatest="on" zPosition="4" />
+  </screen>	
+		
 </skin>
