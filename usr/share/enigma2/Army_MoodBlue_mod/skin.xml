@@ -3008,7 +3008,7 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap pixmap="Army_MoodBlue_mod/menu/posizioner.png" position="928,425" zPosition="2" size="250,160" alphatest="blend" transparent="1" />
     <ePixmap position="80,160" zPosition="2" size="1120,460" pixmap="Army_MoodBlue_mod/r1120x460.png" alphatest="blend" transparent="1" />
     <eLabel text="Positioner setup... " position="80,40" zPosition="2" size="400,32" font="RegularAA;28" halign="left" transparent="1" foregroundColor="un99ff" backgroundColor="un11362d" />
-    <widget name="list" position="100,170" size="1080,155" backgroundColor="black" transparent="1" />
+    <widget name="list" position="100,170" size="1080,225" backgroundColor="black" transparent="1" />
     <widget name="snr_db" position="190,470" size="200,24" halign="center" valign="center" font="Regular;21" backgroundColor="background" transparent="1" />
     <eLabel text="SNR:" position="100,500" size="80,24" font="Regular;21" backgroundColor="darkgrey" transparent="1" />
     <widget name="snr_bar" position="190,500" size="200,20" borderWidth="1" backgroundColor="darkgrey" transparent="1" />
@@ -3028,10 +3028,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <ePixmap position="362,650" size="250,40" pixmap="Army_MoodBlue_mod/buttons/green25.png" alphatest="on" zPosition="1" />
     <ePixmap position="668,650" size="250,40" pixmap="Army_MoodBlue_mod/buttons/yellow25.png" alphatest="on" zPosition="1" />
     <ePixmap position="974,650" size="250,40" pixmap="Army_MoodBlue_mod/buttons/blue25.png" alphatest="on" zPosition="1" />
-    <widget name="red" position="56,650" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-    <widget name="green" position="362,650" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
-    <widget name="yellow" position="668,650" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="una18120" transparent="1" />
-    <widget name="blue" position="974,650" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
+	<widget name="key_red" position="56,650" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
+	<widget name="key_green" position="362,650" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
+      <widget name="key_yellow" position="668,650" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="#a18120" transparent="1" />
+      <widget name="key_blue" position="974,650" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
+    <widget name="status_bar" position="100,583" size="460,26" font="Regular;22" foregroundColor="red" backgroundColor="transpBlack" transparent="1"/>
   </screen>
   <screen name="CiSelection" position="center,center" size="710,240" title="Common Interface">
     <ePixmap pixmap="Army_MoodBlue_mod/frame_box-fs8.png" zPosition="-2" position="0,0" size="710,240" alphatest="on" />
@@ -3613,8 +3614,14 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <eLabel text="CrossEPG Configuration" position="60,30" zPosition="2" size="400,36" font="RegularAA;28" halign="left" transparent="1" foregroundColor="un99ff" backgroundColor="transpBlack" />
     <widget name="config" position="70,120" size="710,250" scrollbarMode="showOnDemand" zPosition="1" backgroundColor="transpBlack" transparent="1" />
     <widget name="information" position="840,90" size="360,200" halign="center" valign="center" font="Regular;22" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1" />
-    <ePixmap position="310,650" size="250,40" pixmap="Army_MoodBlue_mod/buttons/red25.png" alphatest="on" zPosition="1" />
-    <widget position="310,650" size="250,40" name="key_red" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="3" />
+    <ePixmap position="56,650" size="250,40" pixmap="Army_MoodBlue_mod/buttons/red25.png" alphatest="on" zPosition="1" />
+    <ePixmap position="362,650" size="250,40" pixmap="Army_MoodBlue_mod/buttons/green25.png" alphatest="on" zPosition="1" />
+    <ePixmap position="668,650" size="250,40" pixmap="Army_MoodBlue_mod/buttons/yellow25.png" alphatest="on" zPosition="1" />
+    <ePixmap position="974,650" size="250,40" pixmap="Army_MoodBlue_mod/buttons/blue25.png" alphatest="on" zPosition="1" />
+	<widget name="key_red" position="56,650" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
+	<widget name="key_green" position="362,650" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
+      <widget name="key_yellow" position="668,650" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="#a18120" transparent="1" />
+      <widget name="key_blue" position="974,650" zPosition="2" size="250,40" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" />
   </screen>
   <screen name="CrossEPG_Menu" position="0,0" size="1280,720" title="CrossEPG Menu" flags="wfNoBorder">
     <ePixmap position="0,0" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
@@ -4117,6 +4124,41 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget position="668,660" size="250,36" name="key_yellow" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="3" />
     <widget position="974,660" size="250,36" name="key_blue" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="3" />
   </screen>
+<screen name="ScNewSelection" position="0,0" size="1280,720" title="Softcam Manager" backgroundColor="transparent" flags="wfNoBorder">
+    <ePixmap position="center,center" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
+    <ePixmap position="960,470" zPosition="-1" size="250,160" pixmap="Army_MoodBlue_mod/menu/information.png" alphatest="on" />
+    <ePixmap position="870,310" zPosition="-1" size="300,14" pixmap="Army_MoodBlue_mod/chan_p1_bar.png" alphatest="on" />
+    <ePixmap position="58,81" zPosition="2" size="760,550" pixmap="Army_MoodBlue_mod/r760x550.png" alphatest="blend" transparent="1" />
+    <widget source="Title" render="Label" position="80,30" size="500,34" font="RegularAA;28" halign="left" foregroundColor="un99ff" backgroundColor="un11362d" transparent="1" />
+    <ePixmap position="832,81" zPosition="-1" size="378,216" pixmap="Army_MoodBlue_mod/tv_2-fs8.png" alphatest="on" />
+    <widget source="session.VideoPicture" render="Pig" position=" 836,84" size="370,208" zPosition="3" backgroundColor="transparent2" />
+    <widget source="session.CurrentService" render="Label" position="815,330" size="420,32" zPosition="2" font="Regular;28" halign="center" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="background">
+      <convert type="ServiceName">Name</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Label" position="815,362" size="420,100" zPosition="2" halign="center" font="Regular; 24" foregroundColor="un99ff" backgroundColor="transpBlack" transparent="1">
+      <convert type="EventName">Name</convert>
+    </widget>
+    <widget source="session.Event_Now" render="Progress" pixmap="Army_MoodBlue_mod/chan_p_bar.png" size="300,14" position="870,310" zPosition="1" backgroundColor="darkgrey" transparent="1">
+      <convert type="EventTime">Progress</convert>
+    </widget>
+	<widget name="cam" zPosition="2" position="70,100" size="310,21" font="Regular; 17" halign="left" transparent="1" foregroundColor="white" backgroundColor="background" />
+	<widget name="server" zPosition="2" position="390,100" size="328,21" font="Regular; 17" halign="left" transparent="1" foregroundColor="white" backgroundColor="background" />
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/PLi/SoftcamSetup/images/div-h.png" position="70,130" zPosition="2" size="650,2" />
+	<widget name="entries" position="70,141" size="650,150" scrollbarMode="showOnDemand" enableWrapAround="1" transparent="1" foregroundColor="white" backgroundColor="background" />
+	<ePixmap pixmap="/usr/lib/enigma2/python/Plugins/PLi/SoftcamSetup/images/div-h.png" position="70,300" zPosition="2" size="650,2" />
+	<widget name="text" position="80,310" size="345,310" zPosition="2"  font="Regular;17" transparent="1" foregroundColor="white" backgroundColor="background"/>
+	<widget name="text1" position="430,310" size="320,310" zPosition="2"  font="Regular;17" transparent="1" foregroundColor="white" backgroundColor="background"/>
+    <ePixmap position="51,660" size="250,40" pixmap="Army_MoodBlue_mod/buttons/red25.png" alphatest="on" zPosition="2" />
+    <ePixmap position="362,660" size="250,40" pixmap="Army_MoodBlue_mod/buttons/green25.png" alphatest="on" zPosition="2" />
+    <ePixmap position="668,660" size="250,40" pixmap="Army_MoodBlue_mod/buttons/yellow25.png" alphatest="on" zPosition="2" />
+    <ePixmap position="974,660" size="250,40" pixmap="Army_MoodBlue_mod/buttons/blue25.png" alphatest="on" zPosition="2" />
+    <widget position="50,660" size="250,36" name="key_red" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="3" />
+    <widget position="362,660" size="250,36" name="key_green" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="3" />
+    <widget position="668,660" size="250,36" name="key_yellow" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="3" />
+    <widget position="974,660" size="250,36" name="key_blue" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="3" />
+    <ePixmap position="1126,40" zPosition="4" size="74,36" pixmap="Army_MoodBlue_mod/buttons/key_menu1.png" transparent="1" alphatest="on" />
+	</screen>
+			
   <screen name="KeymapSel" position="0,0" size="1280,720" title="Keymap Selection" backgroundColor="transparent" flags="wfNoBorder">
     
     <ePixmap position="center,center" zPosition="-1" size="1280,720" pixmap="Army_MoodBlue_mod/frame_base-fs8.png" />
@@ -4517,4 +4559,6 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget position="12,562" size="250,36" name="btt_yellow" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="3" />
     <widget position="315,562" size="250,36" name="btt_blue" font="Regular;24" halign="center" valign="center" backgroundColor="transpBlack" transparent="1" zPosition="3" />
   </screen>
+
+			
 </skin>
