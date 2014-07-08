@@ -4058,10 +4058,10 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
     <widget source="session.Event_Now" render="Progress" pixmap="Army_MoodBlue_mod/chan_p_bar.png" size="300,14" position="870,310" zPosition="1" backgroundColor="darkgrey" transparent="1">
       <convert type="EventTime">Progress</convert>
     </widget>
-    <widget source="lab1" render="Label" position="70,123" size="369,35" font="Regular;30" transparent="1" zPosition="3" backgroundColor="transpBlack" />
-    <widget source="lab2" render="Label" position="70,173" size="370,25" font="Regular;19" transparent="1" zPosition="3" backgroundColor="transpBlack" />
-    <widget source="lab3" render="Label" position="70,213" size="369,25" font="Regular;19" transparent="1" zPosition="3" backgroundColor="transpBlack" />
-    <widget name="AboutScrollLabel" position="70,253" size="369,352" font="Regular;20" transparent="1" zPosition="3" scrollbarMode="showOnDemand" />
+    <widget source="lab1" render="Label" position="70,123" size="569,35" font="Regular;30" transparent="1" zPosition="3" backgroundColor="transpBlack" />
+    <widget source="lab2" render="Label" position="70,173" size="570,25" font="Regular;19" transparent="1" zPosition="3" backgroundColor="transpBlack" />
+    <widget source="lab3" render="Label" position="70,213" size="569,25" font="Regular;19" transparent="1" zPosition="3" backgroundColor="transpBlack" />
+    <widget name="AboutScrollLabel" position="70,253" size="569,352" font="Regular;20" transparent="1" zPosition="3" scrollbarMode="showOnDemand" />
   </screen>
   <screen name="Devices" position="0,0" size="1280,720" title="SystemInfo" backgroundColor="transparent" flags="wfNoBorder">
     
@@ -4082,11 +4082,11 @@ self.instance.move(ePoint(orgpos.x() + (orgwidth - newwidth)/2, orgpos.y()))
       <convert type="EventTime">Progress</convert>
     </widget>
     <widget source="TunerHeader" render="Label" position="70,121" size="458,36" font="Regular;20" transparent="1" zPosition="1" />
-    <widget source="nims" render="Label" position="70,162" size="458,108" font="Regular;18" transparent="1" zPosition="1" enableWrapAround="0" />
-    <widget source="HDDHeader" render="Label" position="70,275" size="458,36" font="Regular;20" transparent="1" zPosition="1" />
-    <widget source="hdd" render="Label" position="70,315" size="458,112" font="Regular;18" transparent="1" zPosition="1" enableWrapAround="0" />
-    <widget source="MountsHeader" render="Label" position="70,431" size="458,36" font="Regular;20" transparent="1" zPosition="1" />
-    <widget source="mounts" render="Label" position="70,471" size="458,143" font="Regular;18" transparent="1" zPosition="1" enableWrapAround="0" />
+    <widget source="nims" render="Label" position="70,162" size="558,108" font="Regular;18" transparent="1" zPosition="1" enableWrapAround="0" />
+    <widget source="HDDHeader" render="Label" position="70,275" size="558,36" font="Regular;20" transparent="1" zPosition="1" />
+    <widget source="hdd" render="Label" position="70,315" size="558,112" font="Regular;18" transparent="1" zPosition="1" enableWrapAround="0" />
+    <widget source="MountsHeader" render="Label" position="70,431" size="558,36" font="Regular;20" transparent="1" zPosition="1" />
+    <widget source="mounts" render="Label" position="70,471" size="558,143" font="Regular;18" transparent="1" zPosition="1" enableWrapAround="0" />
   </screen>
   <screen name="SystemMemoryInfo" position="0,0" size="1280,720" title="SystemInfo" backgroundColor="transparent" flags="wfNoBorder">
     
