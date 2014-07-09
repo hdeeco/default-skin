@@ -292,7 +292,7 @@
   <screen name="SecondInfoBar" flags="wfNoBorder" position="0,0" size="1280,720" title="Pli 2.0" backgroundColor="transparent">
     <panel name="SecondInfoBarNow"/>
     <panel name="SecondInfoBarNext"/>
-    <ePixmap position="-1,515" zPosition="1" size="1363,716" pixmap="Army_MoodBlue_mod/infobar-fs8_2.png" />
+    <ePixmap position="-1,517" zPosition="1" size="1363,716" pixmap="Army_MoodBlue_mod/infobar-fs8_2.png" />
     <ePixmap position="200,586" zPosition="2" size="21,14" pixmap="Army_MoodBlue_mod/icons/icon_event.png" alphatest="on" />
     <widget source="session.CurrentService" render="Label" position="373,518" size="530,32" zPosition="2" font="Regular;28" halign="center" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="background">
       <convert type="ServiceName">Name</convert>
