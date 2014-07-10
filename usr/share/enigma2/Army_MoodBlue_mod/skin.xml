@@ -297,10 +297,10 @@
     <widget source="session.CurrentService" render="Label" position="373,518" size="530,32" zPosition="2" font="Regular;28" halign="center" noWrap="1" transparent="1" foregroundColor="white" backgroundColor="background">
       <convert type="ServiceName">Name</convert>
     </widget>
-    <widget source="session.CurrentService" zPosition="4" render="Label" position="332,659" size="627,50" backgroundColor="background" foregroundColor="uncccccc" transparent="1" font="Display; 16" halign="left">
+    <widget source="session.CurrentService" zPosition="4" render="Label" position="480,679" size="627,40" backgroundColor="background" foregroundColor="uncccccc" transparent="1" font="Display; 16" >
       <convert type="PliExtraInfo">CryptoInfo</convert>
     </widget>
-    <widget source="session.CurrentService" render="Label" position="5,659" size="340,40" font="Display; 16" zPosition="4" transparent="1" backgroundColor="background" foregroundColor="un999999">
+    <widget source="session.CurrentService" render="Label" position="195,659" size="640,40" font="Display; 16" zPosition="4" transparent="1" backgroundColor="background" foregroundColor="uncccccc">
       <convert type="CryptoInfo">VerboseInfo</convert>
     </widget>
     <widget source="session.CurrentService" render="Picon" position="34,568" size="130,80" zPosition="10" transparent="1" alphatest="on">
@@ -421,6 +421,22 @@
     <widget source="session.RecordState" render="Pixmap" pixmap="Army_MoodBlue_mod/rec.png" position="1227,530" zPosition="3" size="12,12" alphatest="on">
       <convert type="ConditionalShowHide">Blink</convert>
     </widget>
+    <eLabel text="SNR" zPosition="4" position="5,675" size="50,24" halign="left" font="Regular;20" backgroundColor="background" foregroundColor="uncccccc" transparent="1"/>
+    <ePixmap position="55,684" zPosition="2" size="61,13" pixmap="Army_MoodBlue_mod/progress_medium.png" alphatest="blend" />
+    <widget source="session.FrontendStatus" render="Progress" position="55,684" size="61,13" zPosition="3" pixmap="Army_MoodBlue_mod/progress_small.png" transparent="1" >
+      <convert type="FrontendInfo">SNR</convert>
+    </widget>
+    <widget source="session.FrontendStatus" render="Label" position="130,675" zPosition="4" size="70,22" halign="left" font="Regular;20" foregroundColor="un99ff" backgroundColor="secondBG" transparent="1" >
+      <convert type="FrontendInfo">SNR</convert>
+    </widget>
+    <eLabel text="AGC" zPosition="4" position="5,655" size="45,24" halign="left" font="Regular;20" backgroundColor="background" foregroundColor="uncccccc" transparent="1" />
+    <ePixmap position="55,664" zPosition="2" size="61,13" pixmap="Army_MoodBlue_mod/progress_medium.png" alphatest="blend" />
+    <widget source="session.FrontendStatus" render="Progress" position="55,664" size="61,13" zPosition="4" pixmap="Army_MoodBlue_mod/progress_small.png" transparent="1" >
+      <convert type="FrontendInfo">AGC</convert>
+    </widget>
+    <widget source="session.FrontendStatus" render="Label" position="130,655" zPosition="4" size="61,22" font="Regular;20" halign="left" foregroundColor="un99ff" backgroundColor="secondBG" transparent="1" >
+      <convert type="FrontendInfo">AGC</convert>
+    </widget>	
   </screen>
   
   <screen name="VirtualKeyBoard" position="75,125" size="560,350" zPosition="99" title="Virtual KeyBoard">
